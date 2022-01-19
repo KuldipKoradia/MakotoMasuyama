@@ -56,4 +56,34 @@ $(document).ready(function(){
 	// 		scrollTop: 0,
 	// 	}, 800);
 	// });
+
+	// vertical slider main JS
+	$(".vertical_slider_main").slick({
+		dots: true,
+		infinite: false,
+		vertical: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		nextArrow: '<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>',
+		prevArrow: false,
+	});
+
+	// policy content text slider JS
+	$(".policy_content_text_slider").slick({
+		rows: 3,
+		dots: false,
+		arrows: false,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
+	// action content box_ lider JS
+	$(".action_content_box_slider").slick({
+		dots: false,
+		infinite: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false
+	});
 });
