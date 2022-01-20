@@ -386,19 +386,69 @@
 	<script src="js/fonts-awesome-5.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/intersection-observer-polyfill.js"></script>
-	<script src="js/home.js"></script>
-	<script src="js/main.js"></script>
-	<script>
+	<!-- <script src="js/home.js"></script> -->
+	<!-- <script src="js/main.js"></script> -->
+	<!-- <script>
 		intro.ready();
 		loading.params.push(intro.start);
-		$(".vertical-center-4").slick({
-			dots: true,
-			vertical: true,
-			centerMode: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: false
-		});
-	</script>
+	</script> -->
 	<script src="js/custom.js"></script>
+	<script type="text/javascript">
+		var intro = {
+			ready:function() {
+				jsintro = document.getElementsByClassName("js-intro")[0];
+				jsintro.classList.add("js-intro-ready");
+				intro.resize();
+			},
+			start:function() {
+				jsintro.classList.add("js-intro-start");
+				resize.params.intro = intro.resize;
+			},
+			resize:function() {
+				jsintro.style.height = window.innerHeight + "px";
+			}
+		};
+		(function($) {
+			function moveLights() {
+				const lights = document.querySelectorAll(".intro__base div");
+				let lightsX = 0, mouseX = 0;
+				document.addEventListener("touchstart", checkMouseDevice);
+				document.addEventListener("mousemove", checkMouseDevice);
+				function checkMouseDevice(e) {
+					document.removeEventListener("touchstart", checkMouseDevice);
+					document.removeEventListener("mousemove", checkMouseDevice);
+					if (e.type == "mousemove") start();
+				}
+				function start() {
+					document.querySelector(".intro").addEventListener("mousemove", setMousePosition);    
+					animate();
+				}
+				function animate() {
+					lightsX += (((mouseX / _windowWidth - .5) - lightsX) / 20);
+					lights[0].style.transform = "translateX(" + lightsX * 24 + "%)";
+					lights[1].style.transform = "translateX(" + lightsX * 12 + "%)";
+					requestAnimationFrame(animate);
+				}
+				function setMousePosition(e) {    
+					mouseX = e.clientX;
+				}
+			}
+			const _ie11 = !!(window.navigator.userAgent.toLowerCase().indexOf("trident") !== -1)
+			let _windowWidth = 0;
+			$(function() {
+				moveLights();
+				_windowWidth = window.innerWidth;
+				let resizeTimer, w = 0;
+				$(window).on("resize", function() {
+					clearTimeout(resizeTimer);
+					resizeTimer = setTimeout(function() {
+						w = window.innerWidth;
+						if (w != _windowWidth) {
+							_windowWidth = w;
+						}
+					}, 300);
+				});
+			});
+		})(jQuery);
+	</script>
 </body>

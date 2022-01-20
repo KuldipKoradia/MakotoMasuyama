@@ -100,7 +100,15 @@ $(document).ready(function(){
 		arrows: false,
 		infinite: false,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 1701,
+			settings: {
+				rows: 3,
+			}
+		}
+		]
 	});
 
 	// action content box slider JS

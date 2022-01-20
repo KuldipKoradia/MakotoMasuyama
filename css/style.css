@@ -599,7 +599,7 @@ header.site_header ul.custom_navbar_links li a {
 }
 .message_content p {
     text-align: center;
-    font-size: 2    0px;
+    font-size: 20px;
     line-height: 60px;
     font-weight: 900;
     color: #232323;
@@ -1015,6 +1015,33 @@ header.site_header ul.custom_navbar_links li a {
 @media(max-width: 1700px) {
     .custom_container {
         max-width: 1430px !important;
+    }
+    .banner_contnet {
+        top: 300px;
+        right: 270px;
+    }
+    .banner_contnet h3 {
+        font-size: 55px;
+        line-height: 80px;
+    }
+    .banner_contnet h2 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    .common_heading h2 {
+        font-size: 66px;
+        line-height: 70px;
+    }
+    .common_heading p {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .message_content {
+        margin-top: 20px;
+    }
+    .message_content p {
+        font-size: 18px;
+        line-height: 42px;
     }
 }
 /*responsive css end*/
