@@ -68,26 +68,30 @@ $(document).ready(function(){
 	// 	prevArrow: false,
 	// });
 	const slider = $(".vertical_slider_main");
-	
-	slider.slick({
-		dots: true,
-		infinite: false,
-		vertical: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		nextArrow: '.slider_next',
-		prevArrow: false,
-	});
 
-	slider.on('wheel', (function(e) {
-		e.preventDefault();
+    slider.slick({
+        dots: true,
+        infinite: false,
+        vertical: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: '.slider_next',
+        prevArrow: false,
+    });
 
-		if (e.originalEvent.deltaY < 0) {
-			$(this).slick('slickPrev');
-		} else {
-			$(this).slick('slickNext');
-		}
-	}));
+    slider.on('wheel', (function(e) {
+        e.preventDefault();
+
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickPrev');
+        } else {
+            $(this).slick('slickNext');
+        }
+    }));
+
+    $(".top_btn").click(function(){
+        slider.slick("slickGoTo", 0);
+    }); 
 
 	// policy content text slider JS
 	$(".policy_content_text_slider").slick({

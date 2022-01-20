@@ -1009,3 +1009,12 @@ header.site_header ul.custom_navbar_links li a {
     text-transform: uppercase;
 }
 /*footer css end*/
+
+
+/*responsive css start*/
+@media(max-width: 1700px) {
+    .custom_container {
+        max-width: 1430px !important;
+    }
+}
+/*responsive css end*/
