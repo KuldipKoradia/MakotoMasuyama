@@ -64,7 +64,7 @@ $(document).ready(function(){
 		vertical: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		nextArrow: '<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>',
+		nextArrow: '.slider_next',
 		prevArrow: false,
 	});
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
 		slidesToScroll: 1
 	});
 
-	// action content box_ lider JS
+	// action content box slider JS
 	$(".action_content_box_slider").slick({
 		dots: false,
 		infinite: false,
