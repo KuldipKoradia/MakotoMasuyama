@@ -617,7 +617,7 @@ header.site_header ul.custom_navbar_links li a {
     height: 100vh;
     display: -ms-flexbox;
     display: flex;
-    padding: 40px 0 0;
+    padding: 10px 0 0;
     overflow: hidden;
 }
 .policy_section .custom_container {
@@ -655,11 +655,11 @@ header.site_header ul.custom_navbar_links li a {
     line-height: 30px;
     font-weight: 900;
     color: #323232;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .policy_content_text .custom_row {
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .policy_content_sec .custom_image_col {
     -ms-flex: 0 0 228px;
