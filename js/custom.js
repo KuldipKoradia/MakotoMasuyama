@@ -94,18 +94,27 @@ $(document).ready(function(){
     }); 
 
 	// policy content text slider JS
+	// var screen = $(window).width();
+	// if(screen <= 1700){
+	// 	$(".policy_content_text_slider").slick({
+	// 		dots: false,
+	// 		arrows: false,
+	// 		infinite: false,
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1
+	// 	});
+	// };
 	$(".policy_content_text_slider").slick({
-		rows: 3,
 		dots: false,
 		arrows: false,
 		infinite: false,
-		slidesToShow: 1,
+		slidesToShow:3,
 		slidesToScroll: 1,
 		responsive: [
 		{
 			breakpoint: 1701,
 			settings: {
-				rows: 3,
+				slidesToShow: 1,
 			}
 		}
 		]
@@ -117,6 +126,14 @@ $(document).ready(function(){
 		infinite: false,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		arrows: false
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 1166,
+			settings: {
+				slidesToShow: 2
+			}
+		}
+		]
 	});
 });
