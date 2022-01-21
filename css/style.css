@@ -100,11 +100,20 @@ img{
     position: relative;
     z-index: 1;
 }
+.vertical_slider_main {
+    min-height: 100vh; 
+    min-width: 100vw;
+}
+.vertical_slider_main section {
+    min-height: 100vh;
+    left: 0;
+    right: 0;
+}
 body,
 .slick-slider .slick-list {
     overflow: hidden;
 }
-.slick-dots {
+ul.onepage-pagination {
     position: absolute;
     top: 0;
     right: 64px;
@@ -116,31 +125,29 @@ body,
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    z-index: 111;
 }
-.slick-dots li {
-    margin: 0 4px;
-}
-.slick-dots li::marker {
+ul.onepage-pagination li {
+    margin: 10px 4px;
     font-size: 0px;
 }
-.slick-dots li button {
+ul.onepage-pagination li a {
     font-size: 0px;
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    border: none;
-    cursor: pointer;
     background-color: #CED1D0;
     transition: all 0.3s;
+    display: table;
 }
-.slick-dots li.slick-active button {
+ul.onepage-pagination li a.active {
     background-color: #36C200;
 }
 .slider_next {
     position: fixed;
     right: 30px;
     bottom: 40px;
-    z-index: 2;
+    z-index: 111;
     border: 2px solid #232323;
     width: 46px;
     height: 46px;
@@ -153,6 +160,7 @@ body,
 .slider_next.slick-disabled {
     display: none;
 }
+
 /*common css end*/
 
 /*commmon grid css start*/
@@ -710,6 +718,37 @@ header.site_header ul.custom_navbar_links li a {
 .more_btn {
     display: table;
 }
+.policy_content .slick-dots {
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.policy_content .slick-dots li {
+    margin: 0 4px;
+}
+.policy_content .slick-dots li::marker {
+    font-size: 0px;
+}
+.policy_content .slick-dots li button {
+    font-size: 0px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #CED1D0;
+    transition: all 0.3s;
+}
+.policy_content .slick-dots li.slick-active button {
+    background-color: #36C200;
+}
 /*policy section css end*/
 
 /*action section css start*/
@@ -1044,7 +1083,7 @@ header.site_header ul.custom_navbar_links li a {
     }
 }
 @media(max-width: 1700px) {
-    .slick-dots {
+    ul.onepage-pagination {
         right: 50px;
     }
     .custom_container {
@@ -1183,18 +1222,9 @@ header.site_header ul.custom_navbar_links li a {
     .footer_copyright {
         margin-top: 50px;
     }
-    .policy_content .slick-dots {
-        flex-direction: row;
-        position: absolute;
-        bottom: 13px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: auto;
-    }
 }
 @media(max-width: 1500px) {
-    .slick-dots {
+    ul.onepage-pagination {
         right: 35px;
     }
     .social_icon {
@@ -1515,7 +1545,7 @@ header.site_header ul.custom_navbar_links li a {
     .custom_container {
         padding: 0 15px !important;
     }
-    .slick-dots {
+    ul.onepage-pagination {
         right: 10px;
     }
     .site_logo img {
@@ -1524,9 +1554,6 @@ header.site_header ul.custom_navbar_links li a {
     .site_logo img:last-child {
         max-width: 93px;
     }
-/*    .banner_animated_section:before {
-        background-position: -320px center;
-    }*/
     .message_content {
         padding: 0 15px;
     }
