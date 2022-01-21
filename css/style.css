@@ -1524,9 +1524,9 @@ header.site_header ul.custom_navbar_links li a {
     .site_logo img:last-child {
         max-width: 93px;
     }
-    .banner_animated_section:before {
+/*    .banner_animated_section:before {
         background-position: -320px center;
-    }
+    }*/
     .message_content {
         padding: 0 15px;
     }
