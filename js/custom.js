@@ -67,32 +67,32 @@ $(document).ready(function(){
 	// 	nextArrow: '.slider_next',
 	// 	prevArrow: false,
 	// });
-	const slider = $(".vertical_slider_main");
+	// const slider = $(".vertical_slider_main");
 
-    slider.slick({
-        dots: true,
-        infinite: false,
-        vertical: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        nextArrow: '<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>',
-        prevArrow: false,
-        verticalSwiping: true,
-    });
+ //    slider.slick({
+ //        dots: true,
+ //        infinite: false,
+ //        vertical: true,
+ //        slidesToShow: 1,
+ //        slidesToScroll: 1,
+ //        nextArrow: '<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>',
+ //        prevArrow: false,
+ //        verticalSwiping: true,
+ //    });
 
-    slider.on('wheel', (function(e) {
-        e.preventDefault();
+ //    slider.on('wheel', (function(e) {
+ //        e.preventDefault();
 
-        if (e.originalEvent.deltaY < 0) {
-            $(this).slick('slickPrev');
-        } else {
-            $(this).slick('slickNext');
-        }
-    }));
+ //        if (e.originalEvent.deltaY < 0) {
+ //            $(this).slick('slickPrev');
+ //        } else {
+ //            $(this).slick('slickNext');
+ //        }
+ //    }));
 
-    $(".top_btn").click(function(){
-        slider.slick("slickGoTo", 0);
-    }); 
+    // $(".top_btn").click(function(){
+    //     slider.slick("slickGoTo", 0);
+    // });
 
 	// policy content text slider JS
 	// var screen = $(window).width();

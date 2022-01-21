@@ -4,6 +4,7 @@
 	<title>Makoto Masuyama</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -24,9 +25,9 @@
 		</nav>
 	</header>
 
-	<div class="vertical_slider_main">
-		<div>
-			<section class="banner_animated_section">
+	<div class="vertical_slider_main" style="min-height: 100vh; min-width: 100vw;">
+		<section style="min-height: 100vh;">
+			<div class="banner_animated_section">
 				<div class="site_logo">
 					<a href="index.html">
 						<img src="images/logo.png" alt="logo image">
@@ -56,10 +57,10 @@
 				<!-- <div class="next_btn">
 					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
 				</div> -->
-			</section>
-		</div>
-		<div>
-			<section class="message_section">
+			</div>
+		</section>
+		<section style="min-height: 100vh;">
+			<div class="message_section">
 				<div class="site_logo">
 					<a href="index.html">
 						<img src="images/logo_green.svg" alt="logo image">
@@ -95,10 +96,10 @@
 				<!-- <div class="next_btn">
 					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
 				</div> -->
-			</section>
-		</div>
-		<div>
-			<section class="policy_section">
+			</div>
+		</section>
+		<section style="min-height: 100vh;">
+			<div class="policy_section">
 				<div class="site_logo">
 					<a href="index.html">
 						<img src="images/logo_green.svg" alt="logo image">
@@ -189,10 +190,10 @@
 				<!-- <div class="next_btn">
 					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
 				</div> -->
-			</section>
-		</div>
-		<div>
-			<section class="action_section">
+			</div>
+		</section>
+		<section style="min-height: 100vh;">
+			<div class="action_section">
 				<img src="images/action_image.png" class="action_image">
 				<div class="site_logo">
 					<a href="index.html">
@@ -284,10 +285,10 @@
 				<!-- <div class="next_btn">
 					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
 				</div> -->
-			</section>
-		</div>
-		<div>
-			<section class="makoto_section">
+			</div>
+		</section>
+		<section style="min-height: 100vh;">
+			<div class="makoto_section">
 				<div class="site_logo">
 					<a href="index.html">
 						<img src="images/logo_green.svg" alt="logo image">
@@ -324,10 +325,10 @@
 				<!-- <div class="next_btn">
 					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
 				</div> -->
-			</section>
-		</div>
-		<div>
-			<footer class="site_footer">
+			</div>
+		</section>
+		<section style="min-height: 100vh;">
+			<div class="site_footer">
 				<div class="site_logo">
 					<a href="index.html">
 						<img src="images/logo_green.svg" alt="logo image">
@@ -375,19 +376,33 @@
 					<img src="images/up_icon.png">
 					<p>Page top</p>
 				</a>
-			</footer>
-		</div>
+			</div>
+		</section>
 	</div>
-
-
 
 	
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.onepage-scroll.min.js"></script>
 	<script src="js/fonts-awesome-5.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/intersection-observer-polyfill.js"></script>
 	<script src="js/custom.js"></script>
 	<script type="text/javascript">
+		$(function() {
+            $(".vertical_slider_main").onepage_scroll({
+                sectionContainer: "section",
+                easing: "ease",
+                animationTime: 1000,
+                pagination: true,
+                updateURL: false,
+                beforeMove: function(index) {},
+                afterMove: function(index) {},
+                loop: false,
+                keyboard: true,
+                responsiveFallback: false,
+                direction: "vertical"
+            });
+        })
 		var intro = {
 			ready:function() {
 				jsintro = document.getElementsByClassName("js-intro")[0];
