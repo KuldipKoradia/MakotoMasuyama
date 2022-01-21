@@ -75,7 +75,7 @@ $(document).ready(function(){
         vertical: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: '.slider_next',
+        nextArrow: '<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>',
         prevArrow: false,
     });
 
@@ -115,6 +115,7 @@ $(document).ready(function(){
 			breakpoint: 1701,
 			settings: {
 				slidesToShow: 1,
+				dots: true
 			}
 		}
 		]
@@ -132,6 +133,12 @@ $(document).ready(function(){
 			breakpoint: 1166,
 			settings: {
 				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 676,
+			settings: {
+				slidesToShow: 1
 			}
 		}
 		]
