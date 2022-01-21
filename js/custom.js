@@ -77,6 +77,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         nextArrow: '<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>',
         prevArrow: false,
+        verticalSwiping: true,
     });
 
     slider.on('wheel', (function(e) {
