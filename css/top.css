@@ -148,33 +148,6 @@ ul.onepage-pagination li a.active {
     font-weight: 900;
     text-shadow: 3px 3px 0px #fff;
 }
-.social_icon {
-    position: fixed;
-    left: 30px;
-    bottom: 40px;
-    z-index: 111;
-}
-.social_icon.open_menu {
-    z-index: 1111;
-}
-.social_icon li:first-child {
-    margin-bottom: 36px;
-}
-.social_icon ul li a {
-    color: #fff;
-    font-size: 23px;
-    transition: all 0.4s;
-}
-.social_icon.open_menu ul li a {
-    color: #000;
-}
-.viewing-page-2 .social_icon ul li a,
-.viewing-page-3 .social_icon ul li a,
-.viewing-page-4 .social_icon ul li a,
-.viewing-page-5 .social_icon ul li a,
-.viewing-page-6 .social_icon ul li a {
-    color: #000;
-}
 .banner_animated_section .slider_next {
     color: #fff;
     border-color: #fff;
@@ -865,9 +838,6 @@ ul.onepage-pagination li a.active {
         font-size: 20px;
         line-height: 28px;
     }
-    .social_icon li:first-child {
-        margin-bottom: 24px;
-    }
     .action_content_box_sec .action_content_box h4 {
         font-size: 20px;
     }
@@ -1236,9 +1206,6 @@ ul.onepage-pagination li a.active {
     }
     .footer_logo img {
         max-width: 120px;
-    }
-    .social_icon ul li a {
-        font-size: 18px;
     }
 }
 /*responsive css end*/
