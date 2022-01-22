@@ -50,6 +50,10 @@ ul.onepage-pagination li a.active {
     border-radius: 50%;
     background-color: transparent;  
 }
+.viewing-page-1 .slider_next {
+    color: #fff;
+    border-color: #fff;
+}
 .slider_next i {
     font-size: 16px;
 }
@@ -1203,6 +1207,9 @@ ul.onepage-pagination li a.active {
     }
     .footer_logo img {
         max-width: 120px;
+    }
+    .social_icon ul li a {
+        font-size: 18px;
     }
 }
 /*responsive css end*/
