@@ -32,7 +32,6 @@ $(window).on('load',function() {
 		// });
 	});
 });
-
 $(document).ready(function(){
 	// navbar toggle js
 	$('.navbar_toggler').click(function(){
@@ -42,7 +41,6 @@ $(document).ready(function(){
 		$('.header_logo').toggleClass('open_menu');
 		$('.social_icon').toggleClass('open_menu');
 	});
-
 	// got to page top js
 	// $(window).on('load scroll',function(){
 	// 	var	windowTop = $(window).scrollTop();
@@ -58,92 +56,4 @@ $(document).ready(function(){
 	// 		scrollTop: 0,
 	// 	}, 800);
 	// });
-
-	// vertical slider main JS
-	// $(".vertical_slider_main").slick({
-	// 	dots: true,
-	// 	infinite: false,
-	// 	vertical: true,
-	// 	slidesToShow: 1,
-	// 	slidesToScroll: 1,
-	// 	nextArrow: '.slider_next',
-	// 	prevArrow: false,
-	// });
-	// const slider = $(".vertical_slider_main");
-
- //    slider.slick({
- //        dots: true,
- //        infinite: false,
- //        vertical: true,
- //        slidesToShow: 1,
- //        slidesToScroll: 1,
- //        nextArrow: '<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>',
- //        prevArrow: false,
- //        verticalSwiping: true,
- //    });
-
- //    slider.on('wheel', (function(e) {
- //        e.preventDefault();
-
- //        if (e.originalEvent.deltaY < 0) {
- //            $(this).slick('slickPrev');
- //        } else {
- //            $(this).slick('slickNext');
- //        }
- //    }));
-
-    // $(".top_btn").click(function(){
-    //     slider.slick("slickGoTo", 0);
-    // });
-
-	// policy content text slider JS
-	// var screen = $(window).width();
-	// if(screen <= 1700){
-	// 	$(".policy_content_text_slider").slick({
-	// 		dots: false,
-	// 		arrows: false,
-	// 		infinite: false,
-	// 		slidesToShow: 1,
-	// 		slidesToScroll: 1
-	// 	});
-	// };
-	$(".policy_content_text_slider").slick({
-		dots: false,
-		arrows: false,
-		infinite: false,
-		slidesToShow:3,
-		slidesToScroll: 1,
-		responsive: [
-		{
-			breakpoint: 1701,
-			settings: {
-				slidesToShow: 1,
-				dots: true
-			}
-		}
-		]
-	});
-
-	// action content box slider JS
-	$(".action_content_box_slider").slick({
-		dots: false,
-		infinite: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		arrows: false,
-		responsive: [
-		{
-			breakpoint: 1166,
-			settings: {
-				slidesToShow: 2
-			}
-		},
-		{
-			breakpoint: 676,
-			settings: {
-				slidesToShow: 1
-			}
-		}
-		]
-	});
 });
