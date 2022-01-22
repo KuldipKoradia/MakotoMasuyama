@@ -5,37 +5,43 @@ body {
 .vertical_slider_main {
     min-height: 100vh;
     min-width: 100vw;
-    transition: transform 1s ease 0s !important;
+    transform: none !important;
+    transition: all 0s !important;
 }
 .vertical_slider_main section {
-    background-color: #ffffff;
     overflow: hidden;
-    visibility: hidden;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    -webkit-perspective-origin: 50% 50%;
-    perspective-origin: 50% 50%;
-    transition: all 1s;
     min-height: 100vh;
-    left: 0;
-    right: 0;
-}
-.vertical_slider_main section:first-child:not(.active),
-.vertical_slider_main section.previous_active {
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    transition: transform 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
     visibility: hidden;
-    opacity: 0;
-    transform: translate3d(-45%, -150%, 20px);
+}
+.vertical_slider_main section > div {
+    background-color: #ffffff;
+    transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
+}
+.vertical_slider_main section.previous_active {
+    transform: translate3d(-45%, -100%, 0px);
+    /*top: -100% !important;*/
+}
+.vertical_slider_main section.previous_active > div {
+    transform: scale(0.4, 0.4);
 }
 .vertical_slider_main section.active {
-    visibility: inherit;
-    opacity: 1;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform: translate3d(0%, 0%, 0px);
+    visibility: visible;
+    /*top: 0 !important;*/
+}
+.vertical_slider_main section.active > div {
+    transform: scale(1, 1);
 }
 .vertical_slider_main section.next_active {
-    visibility: hidden;
-    opacity: 0;
-    transform: translate3d(45%, 150%, 20px);
+    transform: translate3d(45%, 100%, 0px);
+    /*top: 100% !important;*/
+}
+.vertical_slider_main section.next_active > div {
+    transform: scale(0.4, 0.4);
 }
 ul.onepage-pagination {
     position: absolute;
@@ -63,7 +69,6 @@ ul.onepage-pagination li a {
     background-color: #CED1D0;
     transition: all 0.3s;
     display: table;
-    pointer-events: none;
 }
 ul.onepage-pagination li a.active {
     background-color: #36C200;
