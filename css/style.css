@@ -316,6 +316,47 @@ img{
 }
 /*animations css end*/
 
+/*banner section inner page css start*/
+.banner_section_inner_page {
+    background-image: url('../images/action_image_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 260px 0 240px;
+}
+.banner_section_inner_page h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 900;
+}
+.banner_section_inner_page p {
+    font-size: 30px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: 900;
+}
+/*banner section inner page css end*/
 
-
-
+/*breadcrumbs section css start*/
+.breadcrumbs_section {
+    padding: 20px 0;
+}
+.breadcrumbs_section ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.breadcrumbs_section ul li {
+    position: relative;
+}
+.breadcrumbs_section ul li a {
+    font-weight: 14px;
+    line-height: 30px;
+    color: #939393;
+    font-family: 'Roboto', sans-serif;
+}
+/*breadcrumbs section css end*/

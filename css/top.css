@@ -1,12 +1,41 @@
 /*common css start*/
+body {
+    background-color: #CED1D0;
+}
 .vertical_slider_main {
-    min-height: 100vh; 
+    min-height: 100vh;
     min-width: 100vw;
+    transition: transform 1s ease 0s !important;
 }
 .vertical_slider_main section {
+    background-color: #ffffff;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    transition: all 1s;
     min-height: 100vh;
     left: 0;
     right: 0;
+}
+.vertical_slider_main section:first-child:not(.active),
+.vertical_slider_main section.previous_active {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(-45%, -150%, 20px);
+}
+.vertical_slider_main section.active {
+    visibility: inherit;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.vertical_slider_main section.next_active {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(45%, 150%, 20px);
 }
 ul.onepage-pagination {
     position: absolute;
@@ -1128,7 +1157,7 @@ ul.onepage-pagination li a.active {
         margin-top: 10px;
     }
     .message_content p {
-        line-height: 28px;
+        line-height: 25px;
     }
     .policy_content_sec {
         padding: 0;

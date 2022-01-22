@@ -72,7 +72,7 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="next_active">
 			<div class="message_section">
 				<div class="custom_container">
 					<div class="common_heading">
@@ -329,6 +329,9 @@
                     } else {
                         $('.next_btn .slider_next').fadeIn();
                     }
+                    $('.vertical_slider_main section').removeClass('previous_active').removeClass('next_active');
+                    $('.vertical_slider_main section.active').prev('section').addClass('previous_active');
+                    $('.vertical_slider_main section.active').next('section').addClass('next_active');
                 },
                 afterMove: function(index) {},
                 loop: false,
