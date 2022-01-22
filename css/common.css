@@ -317,11 +317,12 @@ header.site_header a.header_logo.open_menu {
 }
 header.site_header a.header_logo .logo_black {
     width: 0px;
-    transition: all 1s ease 0s;
+    transition: all 0.4s;
 }
 header.site_header.inner_page_header.fixed_header.header_animate a.header_logo .logo_black {
     width: 160px;
 }
+header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu .logo_black,
 header.site_header.inner_page_header a.header_logo .logo_black,
 header.site_header a.header_logo.open_menu .logo_black,
 .viewing-page-1 header.site_header a.header_logo .logo_black {
@@ -331,13 +332,13 @@ header.site_header a.header_logo svg {
     margin-left: auto;
     display: block;
     height: auto;
-    transition: all 1s ease 0s;
+    transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
 }
-header.site_header.inner_page_header.fixed_header.header_animate svg {
+header.site_header.inner_page_header.fixed_header.header_animate a.header_logo svg {
     max-width: 121px;
 }
 header.site_header a.header_logo svg text {
-    transition: all 1s ease 0s;
+    transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
     fill: #fff;
 }
 .viewing-page-2 header.site_header a.header_logo svg,
@@ -357,6 +358,7 @@ header.site_header a.header_logo.open_menu svg text,
 .viewing-page-6 header.site_header a.header_logo svg text {
     fill: #36C200;
 }
+header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu svg,
 header.site_header a.header_logo.open_menu svg {
     max-width: 153px;
 }
@@ -487,7 +489,7 @@ header.site_header nav.custom_navbar .copyright_text {
 .social_icon ul li a {
     color: #fff;
     font-size: 23px;
-    transition: all 1s ease 0s;
+    transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
 }
 .social_icon.open_menu ul li a {
     color: #000;
