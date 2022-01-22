@@ -87,7 +87,6 @@
     margin-right: 100px;
 }
 .fliter_boxs select {
-    width: 220px;
     text-align: center;
     height: 60px;
     border: 4px solid #CCCCCC;
@@ -97,9 +96,15 @@
     color: #939393;
     font-weight: 900;
 }
+.category_box select {
+    width: 260px;
+}
+.year_box select {
+    width: 220px;
+}
 .daily_activities_title h4,
 .fliter_boxs p {
-    font-family: 16px;
+    font-size: 16px;
     line-height: 30px;
     color: #323232;
     font-weight: 900;
@@ -278,14 +283,97 @@
 }
 @media(max-width: 1365px) {
     .custom_container {
-        max-width: 1166px;
+        max-width: 1116px;
     }
 }
-@media(max-width: 1166px) {}
-@media(max-width: 900px) {}
+@media(max-width: 1166px) {
+    .custom_container {
+        padding: 0 25px;
+    }
+    .daily_activities_box_sec .custom_col_3 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin: 15px 0;
+    }
+    .social_icon {
+        left: 5px;
+    }
+    .social_icon ul li a {
+        font-size: 20px;
+    }
+    .banner_section_inner_page {
+        padding: 180px 0 90px;
+    }
+    .banner_section_inner_page h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .banner_section_inner_page p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .daily_activities_filters_inner {
+        justify-content: space-between;
+    }
+    .category_box {
+        margin: 0;
+    }
+    .fliter_boxs select {
+        margin-left: 15px;
+    }
+    .category_box select {
+        width: 240px;
+    }
+    .year_box select {
+        width: 130px;
+    }
+}
+@media(max-width: 900px) {
+    .daily_activities_section {
+        padding: 20px 0 0;
+    }
+    .daily_activities_filters_inner {
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .category_box {
+        margin: 20px 0;
+    }
+}
 @media(max-width: 675px) {
-    .footer_logo img {
+    .banner_section_inner_page {
+        padding: 160px 0 60px;
+    }
+    .site_footer.inner_page .footer_copyright img{
+        max-width: 80px;
+    }
+    .site_footer.inner_page img {
         max-width: 120px;
+    }
+    .daily_activities_box_sec .custom_col_3 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .category_box select {
+        width: 230px;
+    }
+    .daily_activities_box_sec {
+        padding: 20px 0 0;
+    }
+    .daily_activities_box_sec .daily_activities_box h4 {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+    .daily_activities_pagination ul li a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .site_footer.inner_page {
+        padding: 50px 0 140px;
     }
 }
 /*responsive css end*/
