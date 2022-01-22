@@ -327,6 +327,9 @@
 				direction: "vertical",
 				updateURL: false
 			});
+			setTimeout(function(){
+				$('ul.onepage-pagination li a').attr('href','javascript:void(0);');
+			}, 250);
 			$(".slider_next").click(function(){
 				$(".vertical_slider_main").moveDown();
 			});
