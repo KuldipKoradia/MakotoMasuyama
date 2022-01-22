@@ -19,7 +19,7 @@ body {
 }
 .vertical_slider_main section > div {
     background-color: #ffffff;
-    transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
+    transition: transform 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s, visibility 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
 }
 .vertical_slider_main section.previous_active {
     transform: translate3d(-45%, -100%, 0px);
