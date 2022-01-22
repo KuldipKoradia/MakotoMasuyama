@@ -39,6 +39,8 @@ $(document).ready(function(){
 		$('body').toggleClass('no_scroll');
 		$(this).toggleClass('open_menu');
 		$(this).next("nav").toggleClass('navbar_animate');
+		$('.header_logo').toggleClass('open_menu');
+		$('.social_icon').toggleClass('open_menu');
 	});
 
 	// got to page top js

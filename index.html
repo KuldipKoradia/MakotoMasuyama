@@ -4,15 +4,26 @@
 	<title>Makoto Masuyama</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/top.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<!-- <link rel="icon" href="images/favicon.png"> -->
 </head>
 <body>
 	<div class="loader-wrapper"><div class="loader"></div></div>
 	<header class="site_header">
+		<a class="header_logo" href="index.html">
+			<img src="images/logo.png" alt="logo image" class="logo_black">
+			<svg xmlns="http://www.w3.org/2000/svg" width="153" height="95" viewBox="0 0 153 95">
+				<g id="Group_29" data-name="Group 29" transform="translate(2445 -22)">
+					<text id="増山誠" transform="translate(-2445 81)" font-size="51" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800"><tspan x="0" y="0">増山誠</tspan></text>
+					<text id="公式サイト" transform="translate(-2445 111)" font-size="20" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500" letter-spacing="0.51em"><tspan x="0" y="0">公式サイト</tspan></text>
+				</g>
+			</svg>
+			<img src="images/logo_green.svg" alt="logo image" class="logo_green">
+		</a>
 		<a href="javascript:void(0);" class="navbar_toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<div class="navbar_toggler_inner"></div>
 		</a>
@@ -22,23 +33,27 @@
 				<li><a href="#.html">Link 2</a></li>
 				<li><a href="#.html">Link 3</a></li>
 			</ul>
+			<p class="copyright_text">Copyright © Office Fumiaki Kobayashi. All rights reserved.</p>
 		</nav>
 	</header>
 
-	
-				<div class="next_btn">
-					<button class="slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
-				</div>
+	<div class="next_btn">
+		<button class="slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
+	</div>
+	<div class="social_icon">
+		<ul>
+			<li>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+			</li>
+		</ul>
+	</div>
 
 	<div class="vertical_slider_main">
 		<section>
 			<div class="banner_animated_section">
-				<div class="site_logo">
-					<a href="index.html">
-						<img src="images/logo.png" alt="logo image">
-						<img src="images/logo.svg" alt="logo image">
-					</a>
-				</div>
 				<div class="intro js-intro">
 					<div class="intro__base">
 						<div></div>
@@ -49,25 +64,10 @@
 					<h3>日本維新の会</h3>
 					<h2>増山誠</h2>
 				</div>
-				<div class="social_icon">
-					<ul>
-						<li>
-							<a href="#"><img src="images/icon_facebook.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="images/icon_twitter.png"></a>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</section>
 		<section>
 			<div class="message_section">
-				<div class="site_logo">
-					<a href="index.html">
-						<img src="images/logo_green.svg" alt="logo image">
-					</a>
-				</div>
 				<div class="custom_container">
 					<div class="common_heading">
 						<h2>Message</h2>
@@ -85,28 +85,10 @@
 						誰もが「挑戦していいんだ」と思える、チャンスと安心を広げていくために。</p>
 					</div>
 				</div>
-				<div class="social_icon">
-					<ul>
-						<li>
-							<a href="#"><img src="images/icon_facebook_black.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="images/icon_twitter_black.png"></a>
-						</li>
-					</ul>
-				</div>
-				<!-- <div class="next_btn">
-					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
-				</div> -->
 			</div>
 		</section>
 		<section>
 			<div class="policy_section">
-				<div class="site_logo">
-					<a href="index.html">
-						<img src="images/logo_green.svg" alt="logo image">
-					</a>
-				</div>
 				<div class="custom_container">
 					<div class="policy_content_sec">
 						<div class="custom_row">
@@ -179,29 +161,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="social_icon">
-					<ul>
-						<li>
-							<a href="#"><img src="images/icon_facebook_black.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="images/icon_twitter_black.png"></a>
-						</li>
-					</ul>
-				</div>
-				<!-- <div class="next_btn">
-					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
-				</div> -->
 			</div>
 		</section>
 		<section>
 			<div class="action_section">
 				<img src="images/action_image.png" class="action_image">
-				<div class="site_logo">
-					<a href="index.html">
-						<img src="images/logo_green.svg" alt="logo image">
-					</a>
-				</div>
 				<div class="action_text_sec">
 					<div class="custom_container">
 						<div class="action_content_sec">
@@ -274,28 +238,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="social_icon">
-					<ul>
-						<li>
-							<a href="#"><img src="images/icon_facebook_black.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="images/icon_twitter_black.png"></a>
-						</li>
-					</ul>
-				</div>
-				<!-- <div class="next_btn">
-					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
-				</div> -->
 			</div>
 		</section>
 		<section>
 			<div class="makoto_section">
-				<div class="site_logo">
-					<a href="index.html">
-						<img src="images/logo_green.svg" alt="logo image">
-					</a>
-				</div>
 				<div class="makoto_content">
 					<div class="custom_container">
 						<div class="custom_row">
@@ -314,28 +260,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="social_icon">
-					<ul>
-						<li>
-							<a href="#"><img src="images/icon_facebook_black.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="images/icon_twitter_black.png"></a>
-						</li>
-					</ul>
-				</div>
-				<!-- <div class="next_btn">
-					<button class="slick-next slick-arrow slider_next" type="button"><i class="fas fa-arrow-down"></i></button>
-				</div> -->
 			</div>
 		</section>
 		<section>
 			<div class="site_footer">
-				<div class="site_logo">
-					<a href="index.html">
-						<img src="images/logo_green.svg" alt="logo image">
-					</a>
-				</div>
 				<div class="custom_container">
 					<div class="footer_btns">
 						<div class="custom_row">
@@ -360,16 +288,6 @@
 						<img src="images/logo_green_footer.svg">
 						<p>Copyright © Office Fumiaki Kobayashi. All rights reserved.</p>
 					</div>
-				</div>
-				<div class="social_icon">
-					<ul>
-						<li>
-							<a href="#"><img src="images/icon_facebook_black.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="images/icon_twitter_black.png"></a>
-						</li>
-					</ul>
 				</div>
 				<div class="footer_logo">
 					<img src="images/logo.png">
@@ -397,7 +315,15 @@
                 animationTime: 1000,
                 pagination: true,
                 updateURL: false,
-                beforeMove: function(index) {},
+                beforeMove: function(index) {
+                    var sectionLength = $('.vertical_slider_main section').length;
+                    var dataIndexActive = $('.vertical_slider_main section.active').attr('data-index');
+                    if(sectionLength == dataIndexActive){
+                        $('.next_btn .slider_next').fadeOut();
+                    } else {
+                        $('.next_btn .slider_next').fadeIn();
+                    }
+                },
                 afterMove: function(index) {},
                 loop: false,
                 keyboard: true,
@@ -405,16 +331,16 @@
                 direction: "vertical",
                 updateURL: false
             });
-		});
+            $(".slider_next").click(function(){
+            	$(".vertical_slider_main").moveDown();
+            });
 
-		$(".slider_next").click(function(){
-			$(".vertical_slider_main").moveDown();
-		});
+            $(".top_btn").click(function(){
+            	$(".vertical_slider_main").moveTo(1);
+            });
+        });
 
-		$(".top_btn").click(function(){
-			$(".vertical_slider_main").moveTo(1);
-		});
-            
+
 
 		var intro = {
 			ready:function() {
