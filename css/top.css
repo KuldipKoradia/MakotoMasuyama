@@ -484,7 +484,6 @@ ul.onepage-pagination li a.active {
 }
 .action_content_box_sec .action_content_box h4 {
     font-size: 30px;
-    line-height: 40px;
     color: #232323;
     font-weight: 900;
     margin-top: 18px;
@@ -781,7 +780,6 @@ ul.onepage-pagination li a.active {
     }
     .action_content_box_sec .action_content_box h4 {
         font-size: 22px;
-        line-height: 30px;
         margin-top: 10px;
         letter-spacing: 0;
     }
@@ -972,7 +970,6 @@ ul.onepage-pagination li a.active {
     }
     .action_content_box_sec .action_content_box h4 {
         font-size: 18px;
-        line-height: 26px;
         margin-top: 6px;
     }
     .makoto_section .makoto_content {
