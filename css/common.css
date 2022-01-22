@@ -363,6 +363,8 @@ header.site_header ul.custom_navbar_links li a {
     font-weight: 900;
     margin: 20px 0;
     display: block;
+    text-align: center;
+    text-transform: uppercase;
 }
 .navbar_toggler {
     padding: 0;
