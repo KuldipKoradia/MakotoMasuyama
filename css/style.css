@@ -1,3 +1,9 @@
+/*social icon css start*/
+.social_icon.inner_page ul li a {
+    color: #232323;
+}
+/*social icon css end*/
+
 /*banner section inner page css start*/
 .banner_section_inner_page {
     background-image: url('../images/action_image_bg.png');
@@ -35,6 +41,21 @@
 .breadcrumbs_section ul li {
     position: relative;
 }
+.breadcrumbs_section ul li:first-child {
+    padding-right: 30px;
+}
+.breadcrumbs_section ul li:first-child:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    color: #939393;
+    width: 10px;
+    height: 18px;
+    margin: auto;
+}
 .breadcrumbs_section ul li a {
     font-weight: 14px;
     line-height: 30px;
@@ -42,3 +63,229 @@
     font-family: 'Roboto', sans-serif;
 }
 /*breadcrumbs section css end*/
+
+/*daily activities section css start*/
+.daily_activities_section {
+    padding: 40px 0 0;
+}
+.daily_activities_filters_inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.fliter_boxs {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.category_box {
+    margin-left: auto;
+    margin-right: 100px;
+}
+.fliter_boxs select {
+    width: 220px;
+    text-align: center;
+    height: 60px;
+    border: 4px solid #CCCCCC;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #939393;
+    font-weight: 900;
+}
+.daily_activities_title h4,
+.fliter_boxs p {
+    font-family: 16px;
+    line-height: 30px;
+    color: #323232;
+    font-weight: 900;
+}
+.daily_activities_box_sec {
+    padding: 43px 0 0;
+}
+.daily_activities_box_sec .custom_col_3 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    margin: 27px 0;
+}
+.daily_activities_box_sec .daily_activities_box span {
+    font-size: 16px;
+    line-height: 30px;
+    color: #939393;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+.daily_activities_box .daily_activities_box_image {
+    position: relative;
+    overflow: hidden;
+    padding-top: 66.3%;
+    border-radius: 10px;
+}
+.daily_activities_box .daily_activities_box_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.daily_activities_box_sec .daily_activities_box h4 {
+    font-size: 30px;
+    color: #232323;
+    font-weight: 900;
+    margin: 18px 0;
+}
+.daily_activities_box_sec .daily_activities_box p {
+    font-family: 16px;
+    line-height: 30px;
+    color: #323232;
+    font-weight: 400;
+}
+.daily_activities_pagination ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.daily_activities_pagination ul li {
+    margin: 0 11px;
+}
+.daily_activities_pagination ul li a {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #232323;
+    font-weight: 900;
+    margin: 18px 0;
+    transition: all 0.4s;
+}
+.daily_activities_pagination ul li a:hover,
+.daily_activities_pagination ul li a.active {
+    background-color: #36C200;
+    color: #fff;
+}
+/*daily activities section css end*/
+
+/*footer section css start*/
+.site_footer.inner_page {
+    position: relative;
+    padding: 100px 0 200px;
+}
+.site_footer.inner_page .footer_copyright {
+    text-align: center;
+}
+.site_footer.inner_page .footer_copyright img {
+    margin: auto;
+}
+.site_footer.inner_page .footer_copyright p {
+    font-size: 12px;
+    line-height: 30px;
+    color: #939393;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+.site_footer.inner_page .footer_logo {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+.site_footer.inner_page .top_btn_inner_page {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: table;
+    text-align: center;
+}
+.site_footer.inner_page .top_btn_inner_page img {
+    margin: auto;
+}
+.site_footer.inner_page .top_btn_inner_page p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #939393;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+/*footer section css end*/
+
+/*responsive css start*/
+@media(max-width: 1700px) {
+    .custom_container {
+        max-width: 1430px;
+    }
+    .social_icon {
+        left: 15px;
+    }
+}
+@media(max-width: 1500px) {
+    .custom_container {
+        max-width: 1300px;
+    }
+    .banner_section_inner_page {
+        padding: 220px 0 150px;
+    }
+    .banner_section_inner_page h2 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .banner_section_inner_page p {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .social_icon {
+        bottom: 15px;
+    }
+    .top_btn {
+        bottom: 15px;
+    }
+    .fliter_boxs select {
+        height: 50px;
+        border: 2px solid #CCCCCC;
+    }
+    .daily_activities_box_sec .daily_activities_box h4 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    .site_footer.inner_page {
+        padding: 70px 0 140px;
+    }
+}
+@media(max-width: 1365px) {
+    .custom_container {
+        max-width: 1166px;
+    }
+}
+@media(max-width: 1166px) {}
+@media(max-width: 900px) {}
+@media(max-width: 675px) {
+    .footer_logo img {
+        max-width: 120px;
+    }
+}
+/*responsive css end*/
