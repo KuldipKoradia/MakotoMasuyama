@@ -550,11 +550,13 @@ ul.onepage-pagination li a.active {
 .makoto_content_image img {
     position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
     min-height: 90vh;
     max-height: 90vh;
     object-position: bottom;
     object-fit: contain;
+    margin: auto;
 }
 .makoto_content .custom_col.custom_align_items_end {
     align-items: flex-end;
