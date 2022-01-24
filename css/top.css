@@ -322,6 +322,7 @@ ul.onepage-pagination li a.active {
     color: #232323;
     font-weight: 500;
     background-color: #F2F8F7;
+    letter-spacing: 1px;
 }
 .policy_content .slick-dots {
     position: absolute;
@@ -641,13 +642,27 @@ ul.onepage-pagination li a.active {
     justify-content: space-between;
     position: relative;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 23px;
     color: #232323;
 }
-.more_btn:hover,
+.footer_btn a i{
+    letter-spacing: 1!important;
+}
+.more_btn:hover {
+    box-shadow: -3px -3px 6px #ffffff, 1px 1px 16px #36c200;
+    color: #36c200;
+    letter-spacing: 5px;
+}
 .footer_btn a:hover {
     box-shadow: -3px -3px 6px #ffffff, 1px 1px 16px #36c200;
+    color: #36c200;
+}
+.footer_btn a span {
+    transition: all 0.4s;
+}
+.footer_btn a:hover span {
+    letter-spacing: 5px;
 }
 .social_icon_footer{
     width: 80px;
@@ -1005,7 +1020,7 @@ ul.onepage-pagination li a.active {
         bottom: 15px;
     }
     .policy_content_text {
-        padding: 20px 0 40px;
+        padding: 20px 0 0;
     }
     .footer_btn a {
         padding: 30px;
@@ -1345,7 +1360,7 @@ ul.onepage-pagination li a.active {
         padding: 0 20px;
     }
     .footer_logo img {
-        max-width: 120px;
+        max-width: 100px;
     }
     .footer_btn a {
         padding: 15px;
