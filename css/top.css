@@ -179,6 +179,9 @@ ul.onepage-pagination li a.active {
 .common_heading {
     text-align: center;
 }
+.common_heading img {
+    margin: auto;
+}
 .common_heading h2 {
     font-size: 80px;
     line-height: 80px;
@@ -217,7 +220,6 @@ ul.onepage-pagination li a.active {
     height: 100vh;
     display: -ms-flexbox;
     display: flex;
-    padding: 10px 0 0;
     overflow: hidden;
 }
 .policy_section .custom_container {
@@ -228,7 +230,6 @@ ul.onepage-pagination li a.active {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: flex-end;
 }
 .policy_content_sec {
     width: 100%;
@@ -245,12 +246,15 @@ ul.onepage-pagination li a.active {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: flex-end;
+    position: relative;
+    min-height: 100vh;
 }
 .policy_content_sec .custom_col_text {
     -ms-flex: 0 0 calc(100% - 580px);
     flex: 0 0 calc(100% - 580px);
     max-width: calc(100% - 580px);
     padding-bottom: 30px;
+    min-height: 100vh;
 }
 .policy_content_sec .policy_content > p {
     text-align: center;
@@ -277,7 +281,7 @@ ul.onepage-pagination li a.active {
 }
 .policy_content_text {
     width: 100%;
-    max-width: 914px;
+    padding-right: 120px;
 }
 .policy_content_text h3 {
     font-size: 50px;
@@ -399,8 +403,8 @@ ul.onepage-pagination li a.active {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
 }
-.action_content_sec .common_heading {
-    text-align: left;
+.action_content_sec .common_heading img {
+    margin: 0;
 }
 .action_heading .custom_image_col {
     -ms-flex: 0 0 110px;
@@ -541,12 +545,19 @@ ul.onepage-pagination li a.active {
     align-items: center;
     justify-content: center;
     padding: 0 15px;
+    position: relative;
+}
+.makoto_content_image img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-height: 90vh;
+    max-height: 90vh;
+    object-position: bottom;
+    object-fit: contain;
 }
 .makoto_content .custom_col.custom_align_items_end {
     align-items: flex-end;
-}
-.makoto_content_image img {
-    width: 100%;
 }
 .makoto_content_text h5 {
     font-size: 23px;
@@ -662,19 +673,29 @@ ul.onepage-pagination li a.active {
 /*footer css end*/
 
 /*responsive css start*/
-@media(min-width: 1701px) {
-    .policy_section .slick-slider .slick-track {
-        display: flex !important;
-        flex-wrap: wrap;
+@media(max-width: 1919px) {
+    .policy_content_text {
+        padding: 20px 120px 40px 0;
     }
-
-    .policy_section .slick-slider .slick-track .slick-slide {
-        width: 100% !important;
+    .policy_section .custom_row {
+        align-items: center;
+    }
+    .policy_content_sec .custom_col_text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .policy_content {
+        width: 100%;
+        display: inline-block;
     }
 }
 @media(max-width: 1800px) {
     .action_text_sec {
         margin-right: 120px;
+        padding-left: 40px;
     }
 }
 @media(max-width: 1700px) {
@@ -695,6 +716,12 @@ ul.onepage-pagination li a.active {
     .banner_contnet h2 {
         font-size: 120px;
         line-height: 140px;
+    }
+    .common_heading .first_heading {
+        max-height: 100px;
+    }
+    .common_heading .second_heading {
+        max-height: 43px;
     }
     .common_heading h2 {
         font-size: 60px;
@@ -739,9 +766,6 @@ ul.onepage-pagination li a.active {
         flex: 0 0 calc(100% - 200px);
         max-width: calc(100% - 200px);
         padding-left: 25px;
-    }
-    .policy_content_text {
-        max-width: 690px;
     }
     .policy_content_sec .policy_content > p {
         font-size: 22px;
@@ -802,9 +826,6 @@ ul.onepage-pagination li a.active {
     .site_logo {
         padding: 15px 30px;
     }
-    .makoto_content_image img {
-        max-width: 391px;
-    }
     .footer_btn h2 {
         font-size: 60px;
         line-height: 60px;
@@ -812,6 +833,19 @@ ul.onepage-pagination li a.active {
     }
     .footer_copyright {
         margin-top: 50px;
+    }
+    .policy_content .custom_container {
+        align-items: center;
+    }
+    .policy_image img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        min-height: 90vh;
+        max-height: 90vh;
+        object-position: left bottom;
+        object-fit: contain;
+        min-width: 45vw;
     }
 }
 @media(max-width: 1500px) {
@@ -838,6 +872,12 @@ ul.onepage-pagination li a.active {
         font-size: 80px;
         line-height: 100px;
     }
+    .common_heading .first_heading {
+        max-height: 80px;
+    }
+    .common_heading .second_heading {
+        max-height: 40px;
+    }
     .common_heading h2 {
         font-size: 50px;
         line-height: 50px;
@@ -851,15 +891,13 @@ ul.onepage-pagination li a.active {
     }
     .action_text_sec {
         margin-right: 80px;
+        padding-left: 30px;
     }
     .action_content_box_sec {
         margin: 0 -15px;
     }
     .action_content_box_sec .slick-slide {
         margin: 0px 15px;
-    }
-    .makoto_content_image img {
-        max-width: 340px;
     }
     .footer_btns {
         padding: 0 34px;
@@ -885,9 +923,6 @@ ul.onepage-pagination li a.active {
     }
     .policy_content_sec .policy_content > p {
         font-size: 20px;
-    }
-    .policy_content_text {
-        max-width: 100%;
     }
     .policy_content_sec .custom_col_image {
         -ms-flex: 0 0 370px;
@@ -924,6 +959,9 @@ ul.onepage-pagination li a.active {
     .top_btn {
         bottom: 15px;
     }
+    .policy_content_text {
+        padding: 20px 0 40px;
+    }
 }
 @media(max-width: 1166px) {
     .banner_contnet {
@@ -939,6 +977,12 @@ ul.onepage-pagination li a.active {
         font-size: 40px;
         line-height: 60px;
         text-shadow: 2px 2px 0px #fff;
+    }
+    .common_heading .first_heading {
+        max-height: 70px;
+    }
+    .common_heading .second_heading {
+        max-height: 35px;
     }
     .banner_contnet h2 {
         font-size: 70px;
@@ -1041,12 +1085,22 @@ ul.onepage-pagination li a.active {
     .more_btn img {
         max-width: 180px;
     }
-    .makoto_section,
     .policy_section .custom_container {
         align-items: center;
     }
+    .makoto_content_image img {
+        min-width: 55vw;
+    }
+    .policy_image img {
+        left: -55%;
+        bottom: -9%;
+        min-width: 65vw;
+    }
 }
 @media(max-width: 900px) {
+    .banner_animated_section:before {
+        background-position: center;
+    }
     .banner_contnet h3 {
         font-size: 34px;
         line-height: 50px;
@@ -1093,6 +1147,7 @@ ul.onepage-pagination li a.active {
     .makoto_content_text h5 {
         font-size: 20px;
         line-height: 30px;
+        margin-top: 25px;
     }
     .makoto_content_text h6 {
         font-size: 16px;
@@ -1104,14 +1159,17 @@ ul.onepage-pagination li a.active {
         max-width: 100%;
         align-items: flex-start;
     }
-    .makoto_content_image img {
-        max-width: 200px;
-    }
     .makoto_content_text {
         max-width: 100%;
         margin: 0;
         padding: 18px 10px 0;
         text-align: center;
+    }
+    .common_heading .first_heading {
+        max-height: 50px;
+    }
+    .common_heading .second_heading {
+        max-height: 22px;
     }
 }
 @media(max-width: 675px) {
@@ -1153,7 +1211,7 @@ ul.onepage-pagination li a.active {
     }
     .action_section {
         padding-right: 28px;
-        align-items: flex-end;
+        padding-top: 25px;
     }
     .action_heading .action_heading_col {
         -ms-flex: 0 0 100%;
@@ -1182,13 +1240,11 @@ ul.onepage-pagination li a.active {
         padding: 15px 0 10px;
     }
     .action_text_sec {
-        padding-bottom: 10px;
+        padding-bottom: 0;
+        padding-left: 20px;
     }
     .more_btn img {
         max-width: 160px;
-    }
-    .makoto_content_image img {
-        max-width: 150px;
     }
     .makoto_content_text {
         padding: 12px 0 0;

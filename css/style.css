@@ -569,6 +569,11 @@
         text-align: center;
         margin-top: 10px;
     }
+    .banner_section_inner_page {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
 }
 @media(max-width: 675px) {
     .banner_section_inner_page {

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="151" height="45" viewBox="0 0 151 45">
+  <defs>
+    <filter id="メッセージ" x="0" y="0" width="151" height="45" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="メッセージ-2" x="0" y="0" width="151" height="45" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.329" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#メッセージ)">
+      <text id="メッセージ-3" data-name="メッセージ" transform="translate(0 35)" fill="#24650b" font-size="30" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800"><tspan x="0" y="0">メッセージ</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#メッセージ-2)">
+      <text id="メッセージ-4" data-name="メッセージ" transform="translate(0 35)" fill="#fff" font-size="30" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800"><tspan x="0" y="0">メッセージ</tspan></text>
+    </g>
+  </g>
+</svg>

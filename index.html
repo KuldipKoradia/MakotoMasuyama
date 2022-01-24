@@ -30,7 +30,7 @@
 				<li><a href="action.html">Action</a></li>
 				<li><a href="policy.html">POLICY</a></li>
 			</ul>
-			<p class="copyright_text">Copyright © Office Fumiaki Kobayashi. All rights reserved.</p>
+			<p class="copyright_text">Copyright © Office Fumiaki Kobayashi.<br class="csp"> All rights reserved.</p>
 		</nav>
 	</header>
 	<div class="next_btn">
@@ -47,7 +47,7 @@
 		</ul>
 	</div>
 	<div class="vertical_slider_main">
-		<section>
+		<section data-index="home" id="home">
 			<div class="banner_animated_section">
 				<div class="intro js-intro">
 					<div class="intro__base">
@@ -55,18 +55,18 @@
 						<div></div>
 					</div>
 				</div>
-				<div class="banner_contnet">
+				<!-- <div class="banner_contnet">
 					<h3>日本維新の会</h3>
 					<h2>増山誠</h2>
-				</div>
+				</div> -->
 			</div>
 		</section>
-		<section class="next_active">
+		<section class="next_active" data-index="message" id="message">
 			<div class="message_section">
 				<div class="custom_container">
 					<div class="common_heading">
-						<h2>Message</h2>
-						<p>メッセージ</p>
+						<img src="images/message_text.svg" class="first_heading">
+						<img src="images/message_text_2.svg" class="second_heading">
 					</div>
 					<div class="message_content">
 						<p>この国を前向きにしたい。<br>
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="next_active" data-index="policy" id="policy">
 			<div class="policy_section">
 				<div class="custom_container">
 					<div class="policy_content_sec">
@@ -95,8 +95,8 @@
 							<div class="custom_col_text">
 								<div class="policy_content">
 									<div class="common_heading">
-										<h2>Policy</h2>
-										<p>政  策</p>
+										<img src="images/policy_text.svg" class="first_heading">
+										<img src="images/policy_text_2.svg" class="second_heading">
 									</div>
 									<p>今の西宮市の課題ってナニ？</p>
 									<div class="policy_content_text_sec">
@@ -158,7 +158,7 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="next_active" data-index="action" id="action">
 			<div class="action_section">
 				<img src="images/action_image.png" class="action_image">
 				<div class="action_text_sec">
@@ -167,8 +167,8 @@
 							<div class="action_heading">
 								<div class="action_heading_col">
 									<div class="common_heading">
-										<h2>Action</h2>
-										<p>活動ギャラリー</p>
+										<img src="images/action_text.svg" class="first_heading">
+										<img src="images/action_text_2.svg" class="second_heading">
 									</div>
 								</div>
 								<div class="action_heading_col">
@@ -235,18 +235,22 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="next_active" data-index="profile" id="profile">
 			<div class="makoto_section">
 				<div class="makoto_content">
 					<div class="custom_container">
 						<div class="custom_row">
 							<div class="custom_col custom_align_items_end">
 								<div class="makoto_content_image">
-									<img src="images/makoto_image.png">
+									<img src="images/makoto_image.png" class="cpc">
 								</div>
 							</div>
 							<div class="custom_col">
 								<div class="makoto_content_text">
+									<div class="common_heading csp">
+										<img src="images/profile_text.svg" class="first_heading">
+										<img src="images/profile_text_2.svg" class="second_heading">
+									</div>
 									<h5>増山　誠<span>（ますやま　まこと）</span></h5>
 									<h6>日本維新の会</h6>
 									<p>早稲田大学政治経済学部を卒業、日興證券勤務の後、2019年から西宮市選出の兵庫県議会議員 維新の会県議会議員団の政務調査会長、農政環境常任委員会副委員長を務める。4人の子供を持つ父親として現役子育て世代。夙川小学校PTA会長(2期目)、夙川地区青少年愛護協議会副会長など地域活動にも積極的に参加。趣味はゴルフ、スポーツ観戦、eスポーツ</p>
@@ -257,14 +261,16 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="next_active" data-index="footer" id="footer">
 			<div class="site_footer">
 				<div class="custom_container">
 					<div class="footer_btns">
 						<div class="custom_row">
 							<div class="custom_col">
 								<div class="footer_btn">
-									<h2>SNS</h2>
+									<div class="footer_heading">
+										<img src="images/sns_text.svg" class="first_heading">
+									</div>
 									<a href="#">
 										<img src="images/facebook_image.png" alt="facebook image">
 									</a>
@@ -337,22 +343,25 @@
 				$(".vertical_slider_main").moveTo(1);
 			});
 			// policy content slider JS
-			$(".policy_content_text_slider").slick({
-				dots: false,
-				arrows: false,
-				infinite: false,
-				slidesToShow:3,
-				slidesToScroll: 1,
-				responsive: [
-				{
-					breakpoint: 1701,
-					settings: {
-						slidesToShow: 1,
-						dots: true
-					}
+			$(window).on("load resize", function () {
+				var windowWidth = $(window).width();
+				if (windowWidth < 1920) {	
+					$(".policy_content_text_slider").slick({
+						dots: true,
+						arrows: false,
+						infinite: false,
+						slidesToShow:1,
+						slidesToScroll: 1,
+						cssEase: 'linear'
+					});
+					setTimeout(function(){
+						$(window).trigger('resize');
+					}, 150);
+				}else{
+					$('.policy_content_text_slider').slick('unslick');
 				}
-				]
 			});
+				
 			// action content box slider JS
 			$(".action_content_box_slider").slick({
 				dots: false,
