@@ -495,10 +495,10 @@ header.site_header nav.custom_navbar .copyright_text {
 .social_icon ul li a {
     color: #fff;
     font-size: 23px;
-    transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
+    transition: all 0.4s;
 }
 .social_icon ul li a:hover {
-    color: #36C200;
+    color: #36C200 !important;
 }
 .social_icon.open_menu ul li a {
     color: #000;
