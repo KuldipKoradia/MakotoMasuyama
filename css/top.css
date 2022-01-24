@@ -1003,6 +1003,9 @@ ul.onepage-pagination li a.active {
     .social_icon_footer i {
         font-size: 20px;
     }
+    .footer_heading img {
+        max-height: 100px;
+    }
 }
 @media(max-width: 1166px) {
     .banner_contnet {
@@ -1137,6 +1140,12 @@ ul.onepage-pagination li a.active {
         bottom: -9%;
         min-width: 65vw;
     }
+    .footer_btns .custom_col {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 12px 0;
+    }
 }
 @media(max-width: 900px) {
     .banner_animated_section:before {
@@ -1211,6 +1220,22 @@ ul.onepage-pagination li a.active {
     }
     .common_heading .second_heading {
         max-height: 22px;
+    }
+    .footer_btn a {
+        padding: 20px;
+    }
+    .social_icon_footer {
+        width: 45px;
+        height: 45px;
+    }
+    .social_icon_footer i {
+        font-size: 16px;
+    }
+    .footer_btn a .icon_right {
+        font-size: 20px;
+    }
+    .footer_heading img {
+        max-height: 86px;
     }
 }
 @media(max-width: 675px) {
@@ -1300,16 +1325,13 @@ ul.onepage-pagination li a.active {
         margin-bottom: 4px;
     }
     .footer_btns {
-        padding: 0 10px;
-    }
-    .footer_btns .custom_col {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin: 5px 0;
+        padding: 0 20px;
     }
     .footer_logo img {
         max-width: 120px;
+    }
+    .footer_btn a {
+        padding: 15px;
     }
 }
 /*responsive css end*/
