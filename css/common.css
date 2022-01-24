@@ -497,6 +497,9 @@ header.site_header nav.custom_navbar .copyright_text {
     font-size: 23px;
     transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
 }
+.social_icon ul li a:hover {
+    color: #36C200;
+}
 .social_icon.open_menu ul li a {
     color: #000;
 }
