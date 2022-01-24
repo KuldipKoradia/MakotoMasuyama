@@ -45,17 +45,25 @@ img{
     max-width: 100%;
     display: block;
 }
-.cpc {
+.cpc, .cpc-1919 {
     display: block !important;
 }
-.csp {
+.csp, .csp-1919 {
     display: none !important;
 }
-@media (max-width: 900px){
-    .cpc{
+@media (max-width: 1919px){
+    .cpc-1919 {
         display: none !important;
     }
-    .csp{
+    .csp-1919 {
+        display: block !important;
+    }
+}
+@media (max-width: 900px){
+    .cpc {
+        display: none !important;
+    }
+    .csp {
         display: block !important;
     }
 }
