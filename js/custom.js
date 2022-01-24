@@ -41,6 +41,13 @@ $(document).ready(function(){
 		$('.header_logo').toggleClass('open_menu');
 		$('.social_icon').toggleClass('open_menu');
 	});
+	$('.custom_navbar_links li a').click(function(){
+		$('body').removeClass('no_scroll');
+		$('.navbar_toggler').removeClass('open_menu');
+		$('.custom_navbar').removeClass('navbar_animate');
+		$('.header_logo').removeClass('open_menu');
+		$('.social_icon').removeClass('open_menu');
+	});
 	$(window).scroll(function(){
         var windowheight = $(window).height();
         var scrollTop = $(window).scrollTop();

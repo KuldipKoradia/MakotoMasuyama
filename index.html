@@ -26,10 +26,10 @@
 		</a>
 		<nav class="custom_navbar">
 			<ul class="custom_navbar_links">
-				<li><a href="index.html#2">Message</a></li>
+				<li><a href="javascript:void(0);" class="message">Message</a></li>
 				<li><a href="policy.html">POLICY</a></li>
 				<li><a href="action.html">Action</a></li>
-				<li><a href="index.html#5">profile</a></li>
+				<li><a href="javascript:void(0);" class="profile">profile</a></li>
 			</ul>
 			<p class="copyright_text">Copyright © Office Fumiaki Kobayashi.<br class="csp"> All rights reserved.</p>
 		</nav>
@@ -395,6 +395,12 @@
 			});
 			$(".top_btn").click(function(){
 				$(".vertical_slider_main").moveTo(1);
+			});
+			$(".message").click(function(){
+				$(".vertical_slider_main").moveTo(2);
+			});
+			$(".profile").click(function(){
+				$(".vertical_slider_main").moveTo(5);
 			});
 			// policy content slider JS
 			$(".policy_content_text_slider").slick({
