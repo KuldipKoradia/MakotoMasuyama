@@ -1371,4 +1371,10 @@ ul.onepage-pagination li a.active {
         max-width: 190px;
     }
 }
+@media(max-width: 379px) {
+    .policy_content_text p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+}
 /*responsive css end*/
