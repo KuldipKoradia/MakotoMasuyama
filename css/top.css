@@ -310,6 +310,18 @@ ul.onepage-pagination li a.active {
 }
 .more_btn {
     display: table;
+    width: 100%;
+    max-width: 222px;
+    box-shadow: -4px -4px 4px #ffffff, 5px 5px 10px rgb(99 109 118 / 60%);
+    text-align: center;
+    height: 70px;
+    line-height: 65px;
+    border-radius: 40px;
+    transition: all 0.4s;
+    font-size: 16px;
+    color: #232323;
+    font-weight: 500;
+    background-color: #F2F8F7;
 }
 .policy_content .slick-dots {
     position: absolute;
@@ -356,6 +368,7 @@ ul.onepage-pagination li a.active {
 .action_text_sec {
     position: relative;
     width: 100%;
+    padding-bottom: 15px;
 }
 .action_text_sec:before {
     content: '';
@@ -632,8 +645,9 @@ ul.onepage-pagination li a.active {
     line-height: 23px;
     color: #232323;
 }
+.more_btn:hover,
 .footer_btn a:hover {
-    box-shadow: -4px -4px 4px #ffffff, 5px 5px 10px #36c200;
+    box-shadow: -3px -3px 6px #ffffff, 1px 1px 16px #36c200;
 }
 .social_icon_footer{
     width: 80px;
@@ -1006,6 +1020,10 @@ ul.onepage-pagination li a.active {
     .footer_heading img {
         max-height: 100px;
     }
+    .more_btn {
+        height: 59px;
+        line-height: 53px;
+    }
 }
 @media(max-width: 1166px) {
     .banner_contnet {
@@ -1067,7 +1085,6 @@ ul.onepage-pagination li a.active {
     }
     .action_text_sec {
         margin-right: 0;
-        padding-bottom: 15px;
     }
     .action_content_box_sec .action_content_box h4 {
         font-size: 18px;
@@ -1332,6 +1349,11 @@ ul.onepage-pagination li a.active {
     }
     .footer_btn a {
         padding: 15px;
+    }
+    .more_btn {
+        height: 50px;
+        line-height: 45px;
+        max-width: 190px;
     }
 }
 /*responsive css end*/
