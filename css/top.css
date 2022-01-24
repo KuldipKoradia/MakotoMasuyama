@@ -22,11 +22,11 @@ body {
     transition: transform 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s, visibility 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
 }
 .vertical_slider_main section.previous_active {
-    transform: translate3d(-45%, -100%, 0px);
+    transform: translate3d(-20%, -100%, 0px);
     /*top: -100% !important;*/
 }
 .vertical_slider_main section.previous_active > div {
-    transform: scale(0.4, 0.4);
+    transform: scale(0.5, 0.5);
 }
 .vertical_slider_main section.active {
     transform: translate3d(0%, 0%, 0px);
@@ -37,11 +37,11 @@ body {
     transform: scale(1, 1);
 }
 .vertical_slider_main section.next_active {
-    transform: translate3d(45%, 100%, 0px);
+    transform: translate3d(20%, 100%, 0px);
     /*top: 100% !important;*/
 }
 .vertical_slider_main section.next_active > div {
-    transform: scale(0.4, 0.4);
+    transform: scale(0.5, 0.5);
 }
 ul.onepage-pagination {
     position: absolute;
