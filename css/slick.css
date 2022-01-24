@@ -24,12 +24,9 @@
 
     display: block;
     overflow: hidden;
-    overflow-y: unset; 
-    height: auto;
-    /*margin-top: 10px;*/
+
     margin: 0;
     padding: 0;
-    /*border: solid;*/
 }
 .slick-list:focus
 {
