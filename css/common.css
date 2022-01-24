@@ -307,6 +307,7 @@ header.site_header.fixed_header {
 header.site_header.fixed_header.header_animate {
     transition: all 0.4s;
     top: 0;
+    padding: 15px 30px;
 }
 header.site_header a.header_logo {
     display: table;
@@ -319,8 +320,9 @@ header.site_header a.header_logo .logo_black {
     width: 0px;
     transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
 }
-header.site_header.inner_page_header.fixed_header.header_animate a.header_logo .logo_black {
+header.site_header.inner_page_header.fixed_header a.header_logo .logo_black {
     width: 0;
+    transition: all 0.4s;
 }
 header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu .logo_black,
 header.site_header.inner_page_header a.header_logo .logo_black,
@@ -334,7 +336,7 @@ header.site_header a.header_logo svg {
     height: auto;
     transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
 }
-header.site_header.inner_page_header.fixed_header.header_animate a.header_logo svg {
+header.site_header.inner_page_header.fixed_header a.header_logo svg {
     max-width: 85px;
 }
 header.site_header a.header_logo svg text {
@@ -518,8 +520,6 @@ header.site_header nav.custom_navbar .copyright_text {
         padding: 15px;
     }
     header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu .logo_black,
-    header.site_header.inner_page_header a.header_logo .logo_black,
-    header.site_header a.header_logo.open_menu .logo_black, 
     header.site_header.inner_page_header a.header_logo .logo_black, 
     header.site_header a.header_logo.open_menu .logo_black, 
     .viewing-page-1 header.site_header a.header_logo .logo_black, 
@@ -541,8 +541,6 @@ header.site_header nav.custom_navbar .copyright_text {
 }
 @media(max-width: 1166px) {
     header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu .logo_black,
-    header.site_header.inner_page_header a.header_logo .logo_black,
-    header.site_header a.header_logo.open_menu .logo_black, 
     header.site_header.inner_page_header a.header_logo .logo_black, 
     header.site_header a.header_logo.open_menu .logo_black, 
     .viewing-page-1 header.site_header a.header_logo .logo_black, 
