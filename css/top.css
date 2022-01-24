@@ -612,10 +612,6 @@ ul.onepage-pagination li a.active {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     padding: 0 39px;
 }
 .footer_btn h2 {
@@ -627,9 +623,16 @@ ul.onepage-pagination li a.active {
     width: 100%;
     margin-bottom: 35px;
 }
-.footer_btn a img {
+.footer_btn a {
+    padding: 40px 60px;
+    cursor: pointer;
+    background-color: #F2F3F7;
+    border-radius: 20px;
+    z-index: -2;
+    transition: 0.2s ease-out;
+    box-shadow: -4px -4px 4px #ffffff, 5px 5px 10px rgb(99 109 118 / 60%);
+    display: block;
     width: 100%;
-    max-width: 772px;
 }
 .footer_copyright {
     text-align: center;
