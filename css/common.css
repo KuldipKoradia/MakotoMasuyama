@@ -389,6 +389,10 @@ header.site_header ul.custom_navbar_links li a {
     display: block;
     text-align: center;
     text-transform: uppercase;
+    transition: all 0.4s;
+}
+header.site_header ul.custom_navbar_links li a:hover {
+    color: #36C200;
 }
 .navbar_toggler {
     padding: 0;

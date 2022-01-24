@@ -6,11 +6,13 @@
 
 /*banner section inner page css start*/
 .banner_section_inner_page {
-    background-image: url('../images/action_image_bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 260px 0 240px;
+}
+.banner_section_inner_page.action_page {
+    background-image: url('../images/action_image_bg.png');
 }
 .banner_section_inner_page h2 {
     font-family: 'Roboto', sans-serif;
@@ -57,10 +59,11 @@
     margin: auto;
 }
 .breadcrumbs_section ul li a {
-    font-weight: 14px;
+    font-size: 14px;
     line-height: 30px;
     color: #939393;
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 /*breadcrumbs section css end*/
 
@@ -152,7 +155,7 @@
     margin: 18px 0;
 }
 .daily_activities_box_sec .daily_activities_box p {
-    font-family: 16px;
+    font-size: 16px;
     line-height: 30px;
     color: #323232;
     font-weight: 400;
@@ -239,6 +242,117 @@
 }
 /*footer section css end*/
 
+/*policy page banner section css start*/
+.banner_section_inner_page.policy_page {
+    background-image: url('../images/policy_image_bg.png');
+}
+/*policy page banner section css end*/
+
+/*nishinomiya city section css start*/
+.nishinomiya_city_section {
+    padding: 20px 0 0;
+}
+.nishinomiya_city_section .nishinomiya_city_heading {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #323232;
+}
+.nishinomiya_city_content_sec .nishinomiya_city_content_box {
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+}
+.nishinomiya_city_content_sec .custom_row {
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.nishinomiya_city_content_sec .custom_col_image {
+    -ms-flex: 0 0 490px;
+    flex: 0 0 490px;
+    max-width: 490px;
+    padding: 0 15px;
+}
+.nishinomiya_city_content_sec .custom_col_text {
+    -ms-flex: 0 0 calc(100% - 490px);
+    flex: 0 0 calc(100% - 490px);
+    max-width: calc(100% - 490px);
+    padding: 0 15px;
+}
+.nishinomiya_city_content_image img {
+    width: 100%;
+}
+.nishinomiya_city_content_text .nishinomiya_city_content_heading {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 84px;
+}
+.nishinomiya_city_content_text span {
+    width: 84px;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #36C200;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+.nishinomiya_city_content_text h4 {
+    font-size: 24px;
+    color: #36C200;
+    line-height: 30px;
+    padding-left: 18px;
+    font-weight: 900;
+}
+.nishinomiya_city_content_text > p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #323232;
+    font-weight: 400;
+    margin-top: 34px;
+}
+.nishinomiya_city_content_list {
+    margin-top: 35px;
+}
+.nishinomiya_city_content_list ul li {
+    padding-left: 16px;
+    position: relative;
+}
+.nishinomiya_city_content_list ul li:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: #323232;
+    border-radius: 50%;
+}
+.nishinomiya_city_content_list p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #323232;
+    font-weight: 400;
+}
+/*nishinomiya city section css end*/
+
 /*responsive css start*/
 @media(max-width: 1700px) {
     .custom_container {
@@ -280,10 +394,60 @@
     .site_footer.inner_page {
         padding: 70px 0 140px;
     }
+    .nishinomiya_city_content_text .nishinomiya_city_content_heading {
+        padding-left: 74px;
+    }
+    .nishinomiya_city_content_text span {
+        width: 74px;
+        height: 74px;
+        line-height: 74px;
+        font-size: 48px;
+    }
+    .nishinomiya_city_section .nishinomiya_city_heading {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .nishinomiya_city_content_text h4 {
+        font-size: 20px;
+        padding-left: 14px;
+    }
+    .nishinomiya_city_content_sec .custom_col_image {
+        -ms-flex: 0 0 420px;
+        flex: 0 0 420px;
+        max-width: 420px;
+    }
+    .nishinomiya_city_content_sec .custom_col_text {
+        -ms-flex: 0 0 calc(100% - 420px);
+        flex: 0 0 calc(100% - 420px);
+        max-width: calc(100% - 420px);
+    }
 }
 @media(max-width: 1365px) {
     .custom_container {
         max-width: 1116px;
+    }
+    .nishinomiya_city_section .nishinomiya_city_heading {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .nishinomiya_city_content_sec .custom_col_image {
+        -ms-flex: 0 0 370px;
+        flex: 0 0 370px;
+        max-width: 370px;
+    }
+    .nishinomiya_city_content_sec .custom_col_text {
+        -ms-flex: 0 0 calc(100% - 370px);
+        flex: 0 0 calc(100% - 370px);
+        max-width: calc(100% - 370px);
+    }
+    .nishinomiya_city_content_text .nishinomiya_city_content_heading {
+        padding-left: 58px;
+    }
+    .nishinomiya_city_content_text span {
+        width: 58px;
+        height: 58px;
+        line-height: 58px;
+        font-size: 36px;
     }
 }
 @media(max-width: 1166px) {
@@ -328,6 +492,18 @@
     .year_box select {
         width: 130px;
     }
+    .nishinomiya_city_content_sec .custom_col_text,
+    .nishinomiya_city_content_sec .custom_col_image {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .nishinomiya_city_content_image img {
+        margin-bottom: 15px;
+    }
+    .nishinomiya_city_content_sec .nishinomiya_city_content_box {
+        padding: 20px;
+    }
 }
 @media(max-width: 900px) {
     .daily_activities_section {
@@ -340,6 +516,34 @@
     }
     .category_box {
         margin: 20px 0;
+    }
+    .nishinomiya_city_section .nishinomiya_city_heading {
+        font-size: 18px;
+    }
+    .nishinomiya_city_content_sec .nishinomiya_city_content_box {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .nishinomiya_city_content_text .nishinomiya_city_content_heading {
+        padding-left: 0;
+        flex-direction: column;
+    }
+    .nishinomiya_city_content_text span {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        position: relative;
+    }
+    .nishinomiya_city_content_text h4 {
+        font-size: 18px;
+        padding-left: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .nishinomiya_city_content_text > p {
+        text-align: center;
+        margin-top: 10px;
     }
 }
 @media(max-width: 675px) {
@@ -376,4 +580,4 @@
         padding: 50px 0 140px;
     }
 }
-/*responsive css end*/
+/*responsive css end

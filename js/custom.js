@@ -58,14 +58,14 @@ $(document).ready(function(){
         }
     });
 	// got to page top js
-	$(window).on('load scroll',function(){
-		var	windowTop = $(window).scrollTop();
-		if(windowTop > 600) {
-			$('.top_btn_inner_page').fadeIn();
-		} else {
-			$('.top_btn_inner_page').fadeOut();
-		}
-	});
+	// $(window).on('load scroll',function(){
+	// 	var	windowTop = $(window).scrollTop();
+	// 	if(windowTop > 600) {
+	// 		$('.top_btn_inner_page').fadeIn();
+	// 	} else {
+	// 		$('.top_btn_inner_page').fadeOut();
+	// 	}
+	// });
 	$('.top_btn_inner_page').on('click', function (event) {
 		event.preventDefault();
 		$('body,html').animate({
