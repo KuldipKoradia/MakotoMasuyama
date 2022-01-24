@@ -58,12 +58,14 @@
     height: 18px;
     margin: auto;
 }
+.breadcrumbs_section ul li span,
 .breadcrumbs_section ul li a {
     font-size: 14px;
     line-height: 30px;
     color: #939393;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    display: block;
 }
 /*breadcrumbs section css end*/
 
@@ -115,12 +117,18 @@
 .daily_activities_box_sec {
     padding: 43px 0 0;
 }
+.daily_activities_box_sec .custom_row {
+    justify-content: center;
+}
 .daily_activities_box_sec .custom_col_3 {
     -ms-flex: 0 0 33.33%;
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 0 15px;
     margin: 27px 0;
+}
+.daily_activities_box_sec .daily_activities_box {
+    display: block;
 }
 .daily_activities_box_sec .daily_activities_box span {
     font-size: 16px;
@@ -147,18 +155,30 @@
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+    transition: all 0.4s;
+}
+.daily_activities_box_sec .daily_activities_box:hover img {
+    transform: scale(1.1);
 }
 .daily_activities_box_sec .daily_activities_box h4 {
     font-size: 30px;
     color: #232323;
     font-weight: 900;
     margin: 18px 0;
+    transition: all 0.4s;
+}
+.daily_activities_box_sec .daily_activities_box:hover h4 {
+    color: #36C200;
 }
 .daily_activities_box_sec .daily_activities_box p {
     font-size: 16px;
     line-height: 30px;
     color: #323232;
     font-weight: 400;
+    transition: all 0.4s;
+}
+.daily_activities_box_sec .daily_activities_box:hover p {
+    color: #24650B;
 }
 .daily_activities_pagination ul {
     display: -ms-flexbox;
@@ -192,6 +212,9 @@
 .daily_activities_pagination ul li a.active {
     background-color: #36C200;
     color: #fff;
+}
+.daily_activities_pagination ul li a.active {
+    pointer-events: none;
 }
 /*daily activities section css end*/
 
@@ -499,7 +522,8 @@
         max-width: 100%;
     }
     .nishinomiya_city_content_image img {
-        margin-bottom: 15px;
+        max-width: 500px;
+        margin: 0 auto 15px;
     }
     .nishinomiya_city_content_sec .nishinomiya_city_content_box {
         padding: 20px;
