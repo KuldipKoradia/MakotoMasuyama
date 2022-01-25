@@ -372,14 +372,32 @@ ul.onepage-pagination li a.active {
     height: 100vh;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
 .action_banner_image {
     position: relative;
+    padding-top: 42vh;
+    overflow: hidden;
+}
+.action_banner_image .action_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .action_heading_profile {
-    width: calc(100% - 160px);
+    width: calc(100% - 130px);
     padding: 11px 30px 11px 160px;
     position: absolute;
     bottom: -1px;
@@ -391,7 +409,7 @@ ul.onepage-pagination li a.active {
     margin: 0;
 }
 .action_content_box_sec {
-    width: calc(100% - 160px);
+    width: calc(100% - 130px);
     padding: 0 13px 0px 143px;
 }
 .action_content_box_sec .more_btn {
