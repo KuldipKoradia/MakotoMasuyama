@@ -1395,11 +1395,15 @@ ul.onepage-pagination li a.active {
         max-width: 120px;
         top: 25%;
     }
+    .banner_images_sec {
+        overflow: visible;
+    }
     .banner_images_sec img {
-        max-width: 130%;
-        max-height: 130%;
-        min-width: 130%;
-        min-height: 130%;
+        max-width: 170%;
+        max-height: 170%;
+        min-width: 170%;
+        min-height: 170%;
+        left: -15%;
     }
 }
 @media(max-width: 479px) {
