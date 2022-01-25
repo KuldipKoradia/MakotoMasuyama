@@ -614,6 +614,7 @@ ul.onepage-pagination li a.active {
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
 }
 .site_footer .custom_container {
     max-width: 1678px;
@@ -712,7 +713,7 @@ ul.onepage-pagination li a.active {
     left: 0;
     right: 0;
     margin: auto;
-    display: table;
+    width: 56px;
     text-align: center;
 }
 .top_btn img {
