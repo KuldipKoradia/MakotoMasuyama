@@ -1194,6 +1194,10 @@ ul.onepage-pagination li a.active {
     .social_icon {
         left: 5px;
     }
+    .footer_logo,
+    .top_btn {
+        bottom: 15px;
+    }
 }
 @media(max-width: 900px) {
     .banner_images_second {

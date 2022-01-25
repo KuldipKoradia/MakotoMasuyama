@@ -403,9 +403,6 @@
     .social_icon {
         bottom: 15px;
     }
-    .top_btn {
-        bottom: 15px;
-    }
     .fliter_boxs select {
         height: 50px;
         border: 2px solid #CCCCCC;
@@ -536,6 +533,10 @@
     }
     .site_footer.inner_page .footer_copyright img{
         max-width: 70px;
+    }
+    .site_footer.inner_page .footer_logo,
+    .site_footer.inner_page .top_btn_inner_page {
+        bottom: 15px;
     }
 }
 @media(max-width: 900px) {
