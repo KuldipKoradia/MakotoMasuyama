@@ -552,6 +552,11 @@ header.site_header nav.custom_navbar .copyright_text {
     }
 }
 @media(max-width: 1166px) {
+    header.site_header ul.custom_navbar_links li a {
+        font-size: 30px;
+        line-height: 60px;
+        margin: 10px 0;
+    }
     header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu .logo_black,
     header.site_header.inner_page_header a.header_logo .logo_black, 
     header.site_header a.header_logo.open_menu .logo_black, 
@@ -567,9 +572,9 @@ header.site_header nav.custom_navbar .copyright_text {
 }
 @media(max-width: 675px) {
     header.site_header ul.custom_navbar_links li a {
-        font-size: 30px;
-        line-height: 70px;
-        margin: 10px 0;
+        font-size: 24px;
+        line-height: 50px;
+        margin: 5px 0;
     }
     header.site_header a.header_logo.open_menu .logo_black, 
     .viewing-page-1 header.site_header a.header_logo .logo_black,
