@@ -1194,6 +1194,11 @@ ul.onepage-pagination li a.active {
         left: 5px;
     }
 }
+@media(max-width: 1024px) {
+    .banner_images_sec img {
+        object-fit: cover;
+    }
+}
 @media(max-width: 900px) {
     .banner_animated_section:before {
         background-position: center;
@@ -1283,9 +1288,6 @@ ul.onepage-pagination li a.active {
     }
     .footer_heading img {
         max-height: 86px;
-    }
-    .banner_images_sec img {
-        object-fit: cover;
     }
 }
 @media(max-width: 675px) {
