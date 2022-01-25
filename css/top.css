@@ -380,7 +380,7 @@ ul.onepage-pagination li a.active {
 }
 .action_banner_image {
     position: relative;
-    padding-top: 42vh;
+    padding-top: 40vh;
     overflow: hidden;
 }
 .action_banner_image .action_image {
@@ -780,27 +780,11 @@ ul.onepage-pagination li a.active {
         right: 400px;
         max-width: 290px;
     }
-    .banner_contnet h3 {
-        font-size: 55px;
-        line-height: 80px;
-    }
-    .banner_contnet h2 {
-        font-size: 120px;
-        line-height: 140px;
-    }
     .common_heading .first_heading {
         max-height: 100px;
     }
     .common_heading .second_heading {
         max-height: 43px;
-    }
-    .common_heading h2 {
-        font-size: 60px;
-        line-height: 60px;
-    }
-    .common_heading p {
-        font-size: 24px;
-        line-height: 38px;
     }
     .message_content {
         margin-top: 20px;
@@ -854,46 +838,6 @@ ul.onepage-pagination li a.active {
         align-items: center;
         padding: 10px 0 30px;
     }
-    .action_text_sec:before {
-        max-width: 1510px;
-    }
-    .action_section .action_heading {
-        padding: 20px 0 10px;
-    }
-    .action_heading .profile_text h3 {
-        font-size: 22px;
-        line-height: 32px;
-        margin-top: 0;
-    }
-    .action_heading .profile_text h3 span {
-        font-size: 18px;
-    }
-    .action_heading .profile_text p {
-        font-size: 12px;
-        line-height: 20px;
-        margin-top: 8px;
-    }
-    .action_heading .profile_image {
-        padding-top: 100%;
-    }
-    .action_content_box_sec .action_content_box p {
-        line-height: 20px;
-        margin-bottom: 10px;
-    }
-    .action_content_box_sec .action_content_box_image {
-        padding-top: 60%;
-    }
-    .action_content_sec .more_btn {
-        margin-top: 10px;
-    }
-    .action_content_box_sec .action_content_box h4 {
-        font-size: 22px;
-        margin-top: 10px;
-        letter-spacing: 0;
-    }
-    .action_profile .custom_row {
-        align-items: center;
-    }
     .site_logo {
         padding: 15px 30px;
     }
@@ -938,40 +882,11 @@ ul.onepage-pagination li a.active {
         right: 290px;
         max-width: 250px;
     }
-    .banner_contnet h3 {
-        font-size: 45px;
-        line-height: 64px;
-    }
-    .banner_contnet h2 {
-        font-size: 80px;
-        line-height: 100px;
-    }
     .common_heading .first_heading {
         max-height: 80px;
     }
     .common_heading .second_heading {
         max-height: 40px;
-    }
-    .common_heading h2 {
-        font-size: 50px;
-        line-height: 50px;
-    }
-    .common_heading p {
-        font-size: 20px;
-        line-height: 28px;
-    }
-    .action_content_box_sec .action_content_box h4 {
-        font-size: 20px;
-    }
-    .action_text_sec {
-        margin-right: 80px;
-        padding-left: 30px;
-    }
-    .action_content_box_sec {
-        margin: 0 -15px;
-    }
-    .action_content_box_sec .slick-slide {
-        margin: 0px 15px;
     }
     .footer_btns {
         padding: 0 34px;
@@ -1063,60 +978,15 @@ ul.onepage-pagination li a.active {
         min-height: 110%;
         object-position: left bottom;
     }
-    .banner_contnet h3 {
-        font-size: 40px;
-        line-height: 60px;
-        text-shadow: 2px 2px 0px #fff;
-    }
     .common_heading .first_heading {
         max-height: 70px;
     }
     .common_heading .second_heading {
         max-height: 35px;
     }
-    .banner_contnet h2 {
-        font-size: 70px;
-        line-height: 90px;
-    }
-    .common_heading h2 {
-        font-size: 42px;
-        line-height: 45px;
-    }
-    .common_heading p {
-        font-size: 18px;
-        line-height: 24px;
-    }
     .message_content p {
         font-size: 16px;
         line-height: 36px;
-    }
-    .action_heading .custom_image_col {
-        -ms-flex: 0 0 90px;
-        flex: 0 0 90px;
-        max-width: 90px;
-    }
-    .action_heading .custom_text_col {
-        -ms-flex: 0 0 calc(100% - 90px);
-        flex: 0 0 calc(100% - 90px);
-        max-width: calc(100% - 90px);
-    }
-    .action_heading .profile_text h3 {
-        font-size: 20px;
-        line-height: 26px;
-    }
-    .action_heading .profile_text h3 span {
-        font-size: 16px;
-    }
-    .action_section {
-        padding-right: 77px;
-        align-items: center;
-    }
-    .action_text_sec {
-        margin-right: 0;
-    }
-    .action_content_box_sec .action_content_box h4 {
-        font-size: 18px;
-        margin-top: 6px;
     }
     .makoto_section .makoto_content {
         padding: 0 30px;
@@ -1171,9 +1041,6 @@ ul.onepage-pagination li a.active {
     .policy_content_sec .policy_content > p {
         font-size: 18px;
     }
-    .more_btn img {
-        max-width: 180px;
-    }
     .policy_section .custom_container {
         align-items: center;
     }
@@ -1206,17 +1073,6 @@ ul.onepage-pagination li a.active {
         margin: auto;
         top: 20%;
     }
-    .banner_animated_section:before {
-        background-position: center;
-    }
-    .banner_contnet h3 {
-        font-size: 34px;
-        line-height: 50px;
-    }
-    .banner_contnet h2 {
-        font-size: 60px;
-        line-height: 70px;
-    }
     .message_content {
         padding: 0 45px;
     }
@@ -1231,23 +1087,6 @@ ul.onepage-pagination li a.active {
     .policy_content_sec {
         padding-right: 55px;
         padding-left: 15px;
-    }
-    .action_section {
-        padding-right: 65px;
-    }
-    .action_content_box_sec .action_content_box h4 {
-        font-size: 16px;
-    }
-    .action_heading .action_heading_col:last-child {
-        flex: 3 0 auto;
-    }
-    .common_heading h2 {
-        font-size: 36px;
-        line-height: 40px;
-    }
-    .action_heading .profile_text h6 {
-        font-size: 18px;
-        line-height: 28px;
     }
     .makoto_section .makoto_content {
         padding: 0 15px;
@@ -1321,7 +1160,6 @@ ul.onepage-pagination li a.active {
     .policy_content_sec {
         padding: 0;
     }
-    .action_heading .custom_text_col,.action_heading .custom_image_col,
     .policy_content_sec .custom_image_col, .policy_content_sec .custom_text_col {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -1332,43 +1170,6 @@ ul.onepage-pagination li a.active {
         max-width: 140px;
         max-height: 140px;
         margin: 0 auto 10px;
-    }
-    .action_section {
-        padding-right: 28px;
-        padding-top: 25px;
-    }
-    .action_heading .action_heading_col {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .action_section .action_image {
-        max-width: 160%;
-    }
-    .action_content_sec .common_heading {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .action_heading .profile_image {
-        padding-top: 25.4%;
-        width: 80px;
-        margin: auto;
-    }
-    .action_heading .profile_text h3, .action_heading .profile_text h6, .action_heading .profile_text p {
-        text-align: center;
-    }
-    .action_heading .profile_text {
-        padding-right: 0;
-    }
-    .action_section .action_heading {
-        padding: 15px 0 10px;
-    }
-    .action_text_sec {
-        padding-bottom: 0;
-        padding-left: 20px;
-    }
-    .more_btn img {
-        max-width: 160px;
     }
     .makoto_content_text {
         padding: 12px 0 0;
