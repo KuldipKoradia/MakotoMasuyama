@@ -374,7 +374,7 @@ header.site_header a.header_logo.open_menu svg {
 }
 header.site_header nav.custom_navbar {
     position: fixed;
-    top: -100%;
+    top: -125%;
     left: 0;
     width: 100vw;
     height: 100vh;
