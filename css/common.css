@@ -359,7 +359,7 @@ header.site_header a.header_logo svg path {
     width: 85px;
     height: auto;
 }
-header.site_header.inner_page_header a.header_logo svg path,
+header.site_header.inner_page_header.fixed_header a.header_logo svg path,
 header.site_header a.header_logo.open_menu svg path,
 .viewing-page-2 header.site_header a.header_logo svg path,
 .viewing-page-3 header.site_header a.header_logo svg path,
@@ -527,6 +527,7 @@ header.site_header nav.custom_navbar .copyright_text {
     }
 }
 @media(max-width: 1500px) {
+    header.site_header.fixed_header.header_animate,
     header.site_header {
         padding: 15px;
     }
