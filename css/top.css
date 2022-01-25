@@ -374,45 +374,36 @@ ul.onepage-pagination li a.active {
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    align-items: flex-end;
+    flex-direction: column;
 }
-.action_text_sec {
+.action_banner_image {
     position: relative;
-    width: 100%;
-    padding-bottom: 15px;
 }
-.action_text_sec:before {
-    content: '';
+.action_heading_profile {
+    width: calc(100% - 160px);
+    padding: 11px 30px 11px 160px;
     position: absolute;
-    top: 0;
+    bottom: -1px;
     left: 0;
-    bottom: 0;
-    background: #fff;
-    width: 100%;
-    max-width: 1790px;
-    z-index: 0;
-    border-radius: 0 10px 0 0;
+    background-color: #fff;
+    border-radius: 0 20px 0 0;
 }
-.action_section .action_image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
+.action_heading_profile .common_heading img {
+    margin: 0;
 }
-.action_section .custom_container {
-    max-width: 1640px;
-    padding: 0px 20px;
+.action_content_box_sec {
+    width: calc(100% - 160px);
+    padding: 0 13px 0px 143px;
+}
+.action_content_box_sec .more_btn {
+    margin-top: 18px;
+    margin-left: 17px;
 }
 .action_heading .custom_row {
     margin: 0;
 }
 .action_profile .custom_row {
     flex-direction: row-reverse;
-}
-.action_content_sec {
-    position: relative;
-    z-index: 1;
 }
 .action_section .action_heading {
     display: -ms-flexbox;
@@ -421,14 +412,10 @@ ul.onepage-pagination li a.active {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0 40px;
 }
 .action_heading .action_heading_col {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-}
-.action_content_sec .common_heading img {
-    margin: 0;
 }
 .action_heading .custom_image_col {
     -ms-flex: 0 0 110px;
@@ -439,8 +426,6 @@ ul.onepage-pagination li a.active {
     -ms-flex: 0 0 calc(100% - 110px);
     flex: 0 0 calc(100% - 110px);
     max-width: calc(100% - 110px);
-}
-.action_heading .profile_text {
     padding-right: 14px;
 }
 .action_heading .profile_text h3 {
@@ -484,9 +469,6 @@ ul.onepage-pagination li a.active {
     min-height: 100%;
     object-fit: cover;
 }
-.action_content_box_sec {
-    margin: 0 -17px;
-}
 .action_content_box_sec .slick-slide {
     margin: 0px 17px;
 }
@@ -500,7 +482,7 @@ ul.onepage-pagination li a.active {
 .action_content_box_sec .action_content_box_image {
     position: relative;
     overflow: hidden;
-    padding-top: 68.3%;
+    padding-top: 62%;
     border-radius: 10px;
 }
 .action_content_box_sec .action_content_box_image img {
