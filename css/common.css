@@ -356,7 +356,7 @@ header.site_header a.header_logo svg path {
 .viewing-page-4 header.site_header a.header_logo svg,
 .viewing-page-5 header.site_header a.header_logo svg,
 .viewing-page-6 header.site_header a.header_logo svg {
-    max-width: 85px;
+    width: 85px;
     height: auto;
 }
 header.site_header.inner_page_header a.header_logo svg path,
@@ -370,7 +370,7 @@ header.site_header a.header_logo.open_menu svg path,
 }
 header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu svg,
 header.site_header a.header_logo.open_menu svg {
-    max-width: 153px;
+    width: 153px;
 }
 header.site_header nav.custom_navbar {
     position: fixed;
