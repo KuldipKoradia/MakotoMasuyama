@@ -444,6 +444,13 @@
         flex: 0 0 calc(100% - 420px);
         max-width: calc(100% - 420px);
     }
+    .site_footer.inner_page .top_btn_inner_page {
+        bottom: 15px;
+    }
+    .site_footer.inner_page .footer_logo {
+        bottom: 15px;
+        right: 15px;
+    }
 }
 @media(max-width: 1365px) {
     .custom_container {
@@ -528,6 +535,12 @@
     .nishinomiya_city_content_sec .nishinomiya_city_content_box {
         padding: 20px;
     }
+    .site_footer.inner_page .footer_logo img {
+        max-width: 160px;
+    }
+    .site_footer.inner_page .footer_copyright img{
+        max-width: 70px;
+    }
 }
 @media(max-width: 900px) {
     .daily_activities_section {
@@ -579,11 +592,8 @@
     .banner_section_inner_page {
         padding: 160px 0 60px;
     }
-    .site_footer.inner_page .footer_copyright img{
-        max-width: 80px;
-    }
-    .site_footer.inner_page img {
-        max-width: 120px;
+    .site_footer.inner_page .footer_logo img {
+        max-width: 100px;
     }
     .daily_activities_box_sec .custom_col_3 {
         -ms-flex: 0 0 100%;
