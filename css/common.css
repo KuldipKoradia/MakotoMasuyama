@@ -347,7 +347,7 @@ header.site_header a.header_logo svg {
 header.site_header.inner_page_header.fixed_header a.header_logo svg {
     max-width: 85px;
 }
-header.site_header a.header_logo svg text {
+header.site_header a.header_logo svg path {
     transition: all 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
     fill: #fff;
 }
@@ -359,13 +359,13 @@ header.site_header a.header_logo svg text {
     max-width: 85px;
     height: auto;
 }
-header.site_header.inner_page_header a.header_logo svg text,
-header.site_header a.header_logo.open_menu svg text,
-.viewing-page-2 header.site_header a.header_logo svg text,
-.viewing-page-3 header.site_header a.header_logo svg text,
-.viewing-page-4 header.site_header a.header_logo svg text,
-.viewing-page-5 header.site_header a.header_logo svg text,
-.viewing-page-6 header.site_header a.header_logo svg text {
+header.site_header.inner_page_header a.header_logo svg path,
+header.site_header a.header_logo.open_menu svg path,
+.viewing-page-2 header.site_header a.header_logo svg path,
+.viewing-page-3 header.site_header a.header_logo svg path,
+.viewing-page-4 header.site_header a.header_logo svg path,
+.viewing-page-5 header.site_header a.header_logo svg path,
+.viewing-page-6 header.site_header a.header_logo svg path {
     fill: #36C200;
 }
 header.site_header.inner_page_header.fixed_header.header_animate a.header_logo.open_menu svg,

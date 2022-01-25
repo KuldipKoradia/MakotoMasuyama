@@ -117,7 +117,7 @@ ul.onepage-pagination li a.active {
     right: 0;
     bottom: 0;
     margin: auto;
-    background-image: url('../images/banner.png');
+    background-image: url('../images/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,28 +142,29 @@ ul.onepage-pagination li a.active {
 .intro__base div:last-child {
     background-image: url(../images/intro_lights_2.png);
 }
-.banner_contnet {
+.banner_images_sec {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.banner_images_sec img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+.banner_images_second {
     position: absolute;
     top: 330px;
     right: 360px;
-}
-.banner_contnet h2 {
-    font-size: 133px;
-    line-height: 160px;
-    color: #FFFFFF;
-    font-weight: 900;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.banner_contnet h3 {
-    font-size: 65px;
-    line-height: 90px;
-    color: #97C4C9;
-    font-weight: 900;
-    text-shadow: 3px 3px 0px #fff;
-}
-.banner_animated_section .slider_next {
-    color: #fff;
-    border-color: #fff;
 }
 /*banner section css end*/
 
@@ -775,9 +776,10 @@ ul.onepage-pagination li a.active {
     .custom_container {
         max-width: 1430px !important;
     }
-    .banner_contnet {
-        top: 140px;
-        right: 300px;
+    .banner_images_second {
+        top: 150px;
+        right: 400px;
+        max-width: 290px;
     }
     .banner_contnet h3 {
         font-size: 55px;
@@ -932,9 +934,10 @@ ul.onepage-pagination li a.active {
         right: 15px;
         bottom: 15px;
     }
-    .banner_contnet {
-        top: 150px;
-        right: 240px;
+    .banner_images_second {
+        top: 170px;
+        right: 290px;
+        max-width: 250px;
     }
     .banner_contnet h3 {
         font-size: 45px;
@@ -1049,7 +1052,7 @@ ul.onepage-pagination li a.active {
     }
 }
 @media(max-width: 1166px) {
-    .banner_contnet {
+    .banner_images_second {
         top: auto;
         left: 0;
         right: 0;
@@ -1057,6 +1060,7 @@ ul.onepage-pagination li a.active {
         margin: auto;
         display: table;
         text-align: center;
+        max-width: 210px;
     }
     .banner_contnet h3 {
         font-size: 40px;
@@ -1280,6 +1284,9 @@ ul.onepage-pagination li a.active {
     .footer_heading img {
         max-height: 86px;
     }
+    .banner_images_sec img {
+        object-fit: cover;
+    }
 }
 @media(max-width: 675px) {
     .custom_container {
@@ -1380,6 +1387,9 @@ ul.onepage-pagination li a.active {
         height: 50px;
         line-height: 45px;
         max-width: 190px;
+    }
+    .banner_images_second {
+        max-width: 180px;
     }
 }
 @media(max-width: 479px) {
