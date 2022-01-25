@@ -444,11 +444,7 @@
         flex: 0 0 calc(100% - 420px);
         max-width: calc(100% - 420px);
     }
-    .site_footer.inner_page .top_btn_inner_page {
-        bottom: 15px;
-    }
     .site_footer.inner_page .footer_logo {
-        bottom: 15px;
         right: 15px;
     }
 }
