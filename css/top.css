@@ -6,6 +6,36 @@ body, html {
 body {
     background-color: #CED1D0;
     position: relative;
+    overflow: hidden;
+}
+.bg_line {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    position: absolute;
+    width: 2px;
+    height: 110vh;
+    left: 60%;
+    top: -5vh;
+    background-color: #36C200;
+    z-index: 1;
+}
+.bg_line:before {
+    content: "";
+    background-color: #ffffff;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 50px;
+}
+.bg_line:after {
+    content: "";
+    background-color: #ffffff;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    right: 50px;
 }
 .vertical_slider_main {
     width: 100%;
@@ -25,6 +55,7 @@ body {
     top: 0 !important;
     transition: transform 1s cubic-bezier(0.72, 0, 0.35, 0.99) 0s;
     visibility: hidden;
+    z-index: 2;
 }
 .vertical_slider_main section > div {
     height: 100% !important;
@@ -1098,6 +1129,15 @@ ul.onepage-pagination li a.active {
     }
 }
 @media(max-width: 900px) {
+    .bg_line {
+        left: 80%;
+    }
+    .bg_line:before {
+        left: 25px;
+    }
+    .bg_line:after {
+        right: 25px;
+    }
     .banner_images_second {
         right: 50px;
         margin: auto;
