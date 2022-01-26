@@ -364,6 +364,34 @@ ul.onepage-pagination li a.active {
 .policy_content .slick-dots li.slick-active button {
     background-color: #36C200;
 }
+.policy_content_text_sec {
+    position: relative;
+}
+.policy_buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 67px 0 0;
+    position: absolute;
+    bottom: -46px;
+    right: 0;
+    left: 0;
+}
+.policy_buttons button {
+    border: 2px solid #232323;
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    margin: 0 8px;
+    transition: all 0.4s;
+}
+.policy_buttons button:hover {
+    border-color: #36C200;
+    color: #36C200;
+}
 /*policy section css end*/
 
 /*action section css start*/
@@ -909,6 +937,9 @@ ul.onepage-pagination li a.active {
     .footer_logo {
         right: 15px;
     }
+    .policy_buttons {
+        padding: 0;
+    }
     .policy_content_sec .policy_content > p {
         font-size: 20px;
     }
@@ -1170,6 +1201,16 @@ ul.onepage-pagination li a.active {
         max-width: 140px;
         max-height: 140px;
         margin: 0 auto 10px;
+    }
+    .policy_buttons {
+        justify-content: space-between;
+        top: 10%;
+        bottom: auto;
+    }
+    .policy_buttons button {
+        width: 40px;
+        height: 40px;
+        margin: 0 15px;
     }
     .makoto_content_text {
         padding: 12px 0 0;

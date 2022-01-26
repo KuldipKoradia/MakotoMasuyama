@@ -198,6 +198,10 @@
 												</div>
 											</div>
 										</div>
+										<div class="policy_buttons">
+											<button class="policy_prev"><i class="fas fa-chevron-left"></i></button>
+											<button class="policy_next"><i class="fas fa-chevron-right"></i></button>
+										</div>
 									</div>
 									<a href="policy.html" class="more_btn">
 										MORE
@@ -401,10 +405,11 @@
 			});
 			// policy content slider JS
 			$(".policy_content_text_slider").slick({
-				dots: true,
-				arrows: false,
+				dots: false,
 				infinite: true,
-				speed: 300
+				speed: 300,
+				nextArrow: '.policy_next',
+				prevArrow: '.policy_prev',
 			});
 			// action content box slider JS
 			$(".action_content_box_slider").slick({
