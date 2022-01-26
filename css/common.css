@@ -45,17 +45,17 @@ img{
     max-width: 100%;
     display: block;
 }
-.cpc, .cpc-1919 {
+.cpc, .cpc-1600 {
     display: block !important;
 }
-.csp, .csp-1919 {
+.csp, .csp-1600 {
     display: none !important;
 }
-@media (max-width: 1919px){
-    .cpc-1919 {
+@media (max-width: 1600px){
+    .cpc-1600 {
         display: none !important;
     }
-    .csp-1919 {
+    .csp-1600 {
         display: block !important;
     }
 }
@@ -66,6 +66,39 @@ img{
     .csp {
         display: block !important;
     }
+}
+.cpc,
+.cpc6,
+.cpc9
+{
+	display: block !important;
+}
+.csp,
+.csp6,
+.csp9 {
+	display: none !important;
+}
+@media (max-width: 900px) {
+	.cpc {
+		display: none !important;
+	}
+	.csp {
+		display: block !important;
+	}
+	.cpc9 {
+		display: none !important;
+	}
+	.csp9 {
+		display: block !important;
+	}	
+}
+@media (max-width: 575px) {
+	.cpc6 {
+		display: none !important;
+	}
+	.csp6 {
+		display: block !important;
+	}
 }
 /*common css end*/
 
