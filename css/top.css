@@ -1099,10 +1099,10 @@ ul.onepage-pagination li a.active {
 }
 @media(max-width: 900px) {
     .banner_images_second {
-        right: 0;
-        left: 0;
+        right: 50px;
         margin: auto;
-        top: 20%;
+        top: auto;
+        bottom: 35%;
     }
     .message_content {
         padding: 0 45px;
@@ -1240,17 +1240,16 @@ ul.onepage-pagination li a.active {
     }
     .banner_images_second {
         max-width: 120px;
-        top: 25%;
     }
     .banner_images_sec {
         overflow: visible;
     }
     .banner_images_sec img {
-        max-width: 185%;
-        max-height: 185%;
-        min-width: 185%;
-        min-height: 185%;
-        left: -22%;
+        max-width: 130%;
+        max-height: 130%;
+        min-width: 130%;
+        min-height: 130%;
+        left: -25%;
     }
 }
 @media(max-width: 479px) {
