@@ -433,7 +433,6 @@ ul.onepage-pagination li a.active {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    flex-direction: column;
     justify-content: space-between;
     padding-bottom: 20px;
 }
@@ -441,6 +440,9 @@ ul.onepage-pagination li a.active {
     position: relative;
     padding-top: 40vh;
     overflow: hidden;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 .action_banner_image .action_image {
     position: absolute;
@@ -480,6 +482,7 @@ ul.onepage-pagination li a.active {
 }
 .action_profile .custom_row {
     flex-direction: row-reverse;
+    align-items: center;
 }
 .action_section .action_heading {
     display: -ms-flexbox;
@@ -840,10 +843,10 @@ ul.onepage-pagination li a.active {
         max-width: 290px;
     }
     .common_heading .first_heading {
-        max-height: 100px;
+        max-height: 90px;
     }
     .common_heading .second_heading {
-        max-height: 43px;
+        max-height: 40px;
     }
     .message_content {
         margin-top: 20px;
@@ -923,6 +926,24 @@ ul.onepage-pagination li a.active {
     }
     .social_icon {
         left: 15px;
+    }
+    .action_banner_image {
+        padding-top: 37vh;
+    }
+    .action_heading_profile {
+        width: calc(100% - 114px);
+        padding: 11px 30px 11px 130px;
+    }
+    .action_content_box_sec {
+        width: calc(100% - 114px);
+        padding: 0 13px 0px 113px;
+    }
+    .action_content_box_sec .action_content_box h4 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .action_content_box_sec .action_content_box_image {
+        padding-top: 54%;
     }
 }
 @media(max-width: 1500px) {
@@ -1026,6 +1047,17 @@ ul.onepage-pagination li a.active {
         height: 59px;
         line-height: 53px;
     }
+    .action_section {
+        padding-bottom: 0;
+    }
+    .action_heading_profile {
+        width: calc(100% - 78px);
+        padding: 11px 30px 11px 60px;
+    }
+    .action_content_box_sec {
+        width: calc(100% - 78px);
+        padding: 0 13px 0px 43px;
+    }
 }
 @media(max-width: 1166px) {
     .banner_images_second {
@@ -1127,6 +1159,28 @@ ul.onepage-pagination li a.active {
     .top_btn {
         bottom: 15px;
     }
+    .action_heading .profile_text h3 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .action_heading .profile_text p {
+        margin-top: 12px;
+    }
+    .action_heading .profile_text h3 span {
+        font-size: 16px;
+    }
+    .action_heading .profile_text h6 {
+        font-size: 18px;
+    }
+    .action_heading_profile {
+        padding: 11px 20px 11px 47px;
+    }
+    .action_content_box_sec {
+        padding: 0 3px 0px 30px;
+    }
+    .action_heading .profile_image {
+        padding-top: 104%;
+    }
 }
 @media(max-width: 900px) {
     .bg_line {
@@ -1204,6 +1258,19 @@ ul.onepage-pagination li a.active {
     }
     .footer_heading img {
         max-height: 86px;
+    }
+    .action_content_box_sec .slick-slide {
+        margin: 0px 15px;
+    }
+    .action_heading_profile {
+        padding: 11px 20px 11px 45px;
+    }
+    .action_content_box_sec {
+        padding: 0 5px 0px 30px;
+    }
+    .action_content_box_sec .action_content_box h4 {
+        font-size: 18px;
+        margin-top: 8px;
     }
 }
 @media(max-width: 675px) {
@@ -1290,6 +1357,56 @@ ul.onepage-pagination li a.active {
         min-width: 130%;
         min-height: 130%;
         left: -25%;
+    }
+    .action_heading_profile .common_heading img {
+        margin: auto;
+    }
+    .action_content_box_sec {
+        padding: 0 0px 0px 15px;
+        width: calc(100% - 64px);
+    }
+    .action_heading_profile {
+        padding: 11px 15px 11px 30px;
+        width: calc(100% - 64px);
+    }
+    .action_heading .action_heading_col,
+    .action_heading .custom_text_col,
+    .action_heading .custom_image_col {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .action_heading .profile_image {
+        padding-top: 80px;
+        max-width: 80px;
+        margin: 10px auto 4px;
+    }
+    .action_heading .profile_text h3, 
+    .action_heading .profile_text h6, 
+    .action_heading .profile_text p {
+        text-align: center;
+    }
+    .action_heading .profile_text p {
+        margin-top: 0;
+    }
+    .action_banner_image {
+        padding-top: 46vh;
+    }
+    .action_heading .profile_text h3 {
+        line-height: 22px;
+    }
+    .action_content_box_sec .more_btn {
+        margin-top: 10px;
+    }
+    .action_heading .profile_text h6 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .action_content_box_sec .action_content_box h4 {
+        font-size: 16px;
+        margin-top: 8px;
+        letter-spacing: -0.4px;
     }
 }
 @media(max-width: 479px) {
